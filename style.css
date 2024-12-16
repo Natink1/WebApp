@@ -1,0 +1,59 @@
+
+.navbar{
+    display:flex;
+    width: 100%;
+}
+.imgl{   
+    padding-left: 200px;
+    width: 80px;   
+}
+.logoimg{
+    width: 130px;
+}
+
+.headera {
+    height: 90vh;
+    background-image: url("/Images/Fbackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    margin: -10px;
+}
+
+
+.firstTitle {
+    text-align: left;
+    padding-top: 150px;
+    color: #fff;
+    font-size: 35px;
+    padding-left: 200px;
+    line-height: .4;
+    font-family: berlin sans FB Demi, sans-serif;
+}
+
+
+.navbar ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-left: 40%;
+  list-style-type: none;
+  margin-left: 80px;
+
+}
+.navbar ul a{
+    
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+.navbar ul a:hover {
+    color: #E38E49;
+    text-underline-offset: 5px;
+    text-decoration: underline;
+    transition: font-size 0.1s ease-in-out;
+    font-size: 19px;
+}
