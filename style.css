@@ -20,11 +20,13 @@
 
 .headera {
     height: 100vh;
-    background-image: url("/Images/Fbackground.png");
+    background-image: url("/Images/Fbackground.png"),linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));;
     background-size: cover;
     background-repeat: no-repeat;
     background-size: 100%;
     margin: -10px;
+    background-blend-mode: color;
+    
 }
 
 .firstTitle {
@@ -76,8 +78,11 @@
 }
 
 .scrollbutton{
-    margin-top: 150px;
-    margin-left: 50%;
+        margin-left: 50%;
+        padding-top: 100px;
+
+}
+.scrollbuttonimg {
     background-color: #E38E49;
     color: white;
     border: none;
@@ -86,4 +91,11 @@
     font-size: 20px;
     transition: background-color 0.3s;
     width: 45px;
+    
+}
+.scrollbutton h3{
+    color: white;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: -5px;
 }
