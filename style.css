@@ -1,3 +1,4 @@
+/* navigation bar and Headers*/
 .navbar {
     display: flex;
     width: 100%;
@@ -18,14 +19,13 @@
 }
 
 .headera {
-    height: 90vh;
+    height: 100vh;
     background-image: url("/Images/Fbackground.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-size: 100%;
     margin: -10px;
 }
-
 
 .firstTitle {
     text-align: left;
@@ -56,7 +56,6 @@
     list-style-type: none;
     margin-left: 80px;
     margin-top: 25px;
-
 }
 
 .navbar ul a {
@@ -74,4 +73,17 @@
     text-decoration: underline;
     transition: font-size 0.1s ease-in-out;
     font-size: 19px;
+}
+
+.scrollbutton{
+    margin-top: 150px;
+    margin-left: 50%;
+    background-color: #E38E49;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+    width: 45px;
 }
