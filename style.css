@@ -20,13 +20,14 @@
 
 .headera {
     height: 100vh;
-    background-image: url("/Images/Fbackground.png"),linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.718));;
+    background-image: url("/Images/Fbackground.png"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.718));
+    ;
     background-size: cover;
     background-repeat: no-repeat;
     background-size: 100%;
     margin: -10px;
     background-blend-mode: color;
-    
+
 }
 
 
@@ -78,11 +79,12 @@
     font-size: 19px;
 }
 
-.scrollbutton{
-        margin-left: 50%;
-        padding-top: 100px;
+.scrollbutton {
+    margin-left: 50%;
+    padding-top: 100px;
 
 }
+
 .scrollbuttonimg {
     background-color: #E38E49;
     color: white;
@@ -92,16 +94,17 @@
     font-size: 20px;
     transition: background-color 0.3s;
     width: 45px;
-    
+
 }
-.scrollbutton h3{
+
+.scrollbutton h3 {
     color: white;
     font-size: 20px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-left: -5px;
 }
 
-.Welcometxt{
+.Welcometxt {
     padding-top: 50px;
     padding-left: 250px;
     padding-right: 250px;
@@ -115,32 +118,34 @@
     font-family: 'montserrat', sans-serif;
 }
 
-.cont1{
+.cont1 {
     margin-top: 20px;
     display: flex;
 }
-.cont1img img{
+
+.cont1img img {
     width: 70%;
     padding-top: 50px;
     padding-right: 750px;
 
-    
-   
+
+
 }
-.cont1text{
+
+.cont1text {
     padding-top: 110px;
     width: 60%;
     padding-left: 20%;
-
-    
 }
-.cont1text h1{
+
+.cont1text h1 {
     font-size: 28px;
     font-family: 'montserrat', sans-serif;
     color: #14274A;
 
 }
-.cont1text p{
+
+.cont1text p {
     font-size: 18px;
     font-family: 'montserrat', sans-serif;
     color: #111111;
@@ -151,3 +156,49 @@
     padding-right: 15%;
 
 }
+.break{
+    background-color: #14274A;
+    height: 3px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 30px;
+}
+
+  .counter-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 800px;
+    margin-left: 25%;
+    margin-top: 50px;
+    background-color: #ffffff;
+    border: 2px solid #007bff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .counter {
+    text-align: center;
+  }
+  
+  .counter h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333333; 
+  }
+  
+  .counter p {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
