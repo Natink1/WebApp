@@ -152,7 +152,7 @@ body {
 .cont1text {
     padding-top: 110px;
     width: 60%;
-    padding-left: 20%;
+    padding-left: 17%;
 }
 
 .cont1text h1 {
@@ -261,7 +261,7 @@ body {
 .cont2text {
     padding-top: 110px;
     width: 60%;
-    padding-left: 20%;
+    padding-left: 17%;
 }
 
 .cont2text h1 {
@@ -339,11 +339,11 @@ body {
   
   .footer-container {
     display: flex;
-    padding: 0;
-    margin: 0;
+    margin-left: 100px;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 25px 50px;
+
   }
   
   .footer-section {
@@ -374,15 +374,16 @@ body {
   }
   
   .links-social {
-    padding-left: 70px;
+    padding-left: 100px;
     display: flex;
     justify-content: space-between;
   }
   
   .social-media p {
+    padding-left: 50px;
     padding-right: 100px;
   }
-  
+
   .footer-section.newsletter form {
     display: flex;
     margin-top: 10px;
@@ -390,7 +391,7 @@ body {
   
   .footer-section.newsletter input {
     padding: 8px;
-    width: 70%;
+    width: 40%;
     border: none;
     border-radius: 3px 0 0 3px;
     font-size: 14px;
@@ -411,6 +412,11 @@ body {
   }
   .footer-section-company-info{
     padding-left: 75px;
+  }
+  .copy{
+    padding-bottom: 2px;
+    margin: 0;
+    text-align: center;
   }
 
   /*footer elemets*/
