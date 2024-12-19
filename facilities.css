@@ -49,6 +49,7 @@
     transition: font-size 0.1s;
     font-size: 19px;
 }
+
 /* navigation bar and Headers*/
 .headera {
     height: 100vh;
@@ -59,7 +60,6 @@
     background-size: 100%;
     margin: -10px;
     background-blend-mode: color;
-
 }
 /* Scroll button and Title*/
 .scrollbutton {
@@ -67,7 +67,6 @@
     padding-top: 100px;
 
 }
-
 .scrollbuttonimg {
     background-color: #E38E49;
     color: white;
@@ -106,8 +105,6 @@ body {
     margin: 0;
 }
 
-
-
 /*footer elemets*/
 
 .footer {
@@ -123,11 +120,6 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 25px 50px;
-  }
-  
-  .footer-section {
-    flex: 1;
-    margin: 10px;
   }
   
   .footer-section h2 {
