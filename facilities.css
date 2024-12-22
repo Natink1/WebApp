@@ -54,7 +54,6 @@
 .headera {
     height: 100vh;
     background-image: url("/Images/FacilitiesBackground.png"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.718));
-    ;
     background-size: cover;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -63,10 +62,12 @@
 }
 /* Scroll button and Title*/
 .scrollbutton {
-    margin-left: 50%;
-    padding-top: 100px;
-
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 }
+
 .scrollbuttonimg {
     background-color: #E38E49;
     color: white;
@@ -78,7 +79,6 @@
     width: 45px;
 
 }
-
 .scrollbutton h3 {
     color: white;
     font-size: 20px;
@@ -104,6 +104,62 @@ body {
     padding: 0;
     margin: 0;
 }
+
+
+
+.tocen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+
+
+.tocen p{
+  margin: 0;
+  max-width: 800px;
+  text-align: justify;
+  letter-spacing: .2px;
+  font-size: 18px;
+  font-family: 'montserrat', sans-serif;
+}
+
+.Content_image{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Content_image img{
+  max-width: 900px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*footer elemets*/
 

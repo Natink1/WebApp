@@ -84,50 +84,49 @@ body {
 
 /* Scroll button and Title*/
 .scrollbutton {
-    margin-left: 50%;
-    padding-top: 100px;
-
-}
-
-.scrollbuttonimg {
-    background-color: #E38E49;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 20px;
-    transition: background-color 0.3s;
-    width: 45px;
-
-}
-
-.scrollbutton h3 {
-    color: white;
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-left: -5px;
-    margin-bottom: 10px;
-}
-.firstTitle {
-    text-align: left;
-    padding-top: 150px;
-    color: #fff;
-    font-size: 35px;
-    padding-left: 200px;
-    line-height: .4;
-    font-family: berlin sans FB Demi, sans-serif;
-    animation: slide 1s ease-out forwards;
-}
-
-
-
-/*scroll button and Title*/
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    
+    .scrollbuttonimg {
+        background-color: #E38E49;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 20px;
+        transition: background-color 0.3s;
+        width: 45px;
+    
+    }
+    .scrollbutton h3 {
+        color: white;
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-left: -5px;
+        margin-bottom: 10px;
+    }
+    
+    .firstTitle {
+        text-align: left;
+        padding-top: 150px;
+        color: #fff;
+        font-size: 35px;
+        padding-left: 200px;
+        line-height: .4;
+        font-family: berlin sans FB Demi, sans-serif;
+        animation: slide 1s ease-out forwards;
+    }
+    /*scroll button and Title*/
+    
 .Welcometxt {
-    padding-top: 50px;
-    padding-left: 250px;
-    padding-right: 250px;
-    margin-left: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
     text-align: justify;
     letter-spacing: .01em;
     word-spacing: .1em;
