@@ -122,6 +122,41 @@ body {
         animation: slide 1s ease-out forwards;
     }
     /*scroll button and Title*/
+
+
+    @media screen and (max-width: 768px) { 
+        .navbar {
+          flex-direction: column; 
+          text-align: center;
+        }
+      
+        .navonlyul {
+          flex-direction: column; 
+          align-items: center;
+        }
+      
+        .navonlyul li {
+          margin: 10px 0; 
+        }
+      
+        .firstTitle {
+          font-size: 2rem; 
+        }
+      
+        .cont1img, .cont2img {
+          width: 100%; 
+        }
+      
+        .cont1text, .cont2text {
+          width: 100%; 
+        }
+      }
+      
+      @media screen and (max-width: 480px) { 
+        .footer-container {
+          flex-direction: column; 
+        }
+      }  
     
 .Welcometxt {
     
