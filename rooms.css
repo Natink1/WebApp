@@ -122,15 +122,16 @@ body {
         animation: slide 1s ease-out forwards;
     }
     /*scroll button and Title*/
-    
+
+
     .tocen {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-      
+        padding-top: 80px;
+    
       }
-      
       
       .tocen p {
         margin: 0;
@@ -139,6 +140,25 @@ body {
         letter-spacing: .2px;
         font-size: 18px;
         font-family: 'montserrat', sans-serif;
+      }
+      
+      
+      .Content_image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      
+      .Content_image img {
+        max-width: 900px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+      }
+      
+      .Content_image p{
+        display: flex;
+        width: 50%;
+      
       }
       
 
