@@ -1,0 +1,305 @@
+.* {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .navbar {
+  
+    display: flex;
+    width: 100%;
+  }
+  
+  .imgl {
+    margin-left: 200px;
+    width: 80px;
+  }
+  
+  .imgl :hover {
+    transform: scale(1.1);
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  .logoimg {
+    width: 130px;
+  }
+  
+  .navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 40%;
+    padding-top: 8px;
+    list-style-type: none;
+  }
+  
+  .navbar ul a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+  }
+  
+  .navbar ul a:hover {
+    color: #E38E49;
+    text-underline-offset: 5px;
+    text-decoration: underline;
+    transition: font-size 0.1s;
+    font-size: 19px;
+  }
+  
+  
+  .navbar ul a:active {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .headera {
+    height: 100vh;
+    background-image: url("/Images/FacilitiesBackground.png"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.718));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-blend-mode: color;
+  }
+  
+  /* navigation bar and Headers*/
+  
+  body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(-40%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  
+  /* Scroll button and Title*/
+  .scrollbutton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+  }
+  
+  .scrollbuttonimg {
+    background-color: #E38E49;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+    width: 45px;
+  
+  }
+  
+  .scrollbutton h3 {
+    color: white;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: -5px;
+    margin-bottom: 10px;
+  }
+  
+  .firstTitle {
+    text-align: left;
+    padding-top: 150px;
+    padding-left: 10%;
+    color: #fff;
+    font-size: 35px;
+    line-height: .4;
+    font-family: berlin sans FB Demi, sans-serif;
+    animation: slide 1s ease-out forwards;
+  }
+  
+  /*scroll button and Title*/
+
+
+.cont11{
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    padding-top: 50px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+.Header_contact {
+    color: #2c3e50;
+    text-align: center;
+    font-family: berlin sans FB Demi, sans-serif;
+    font-size: 35px;
+    padding-top: 20px;
+}
+.container h2 {
+    color: #2c3e50; 
+    text-align: center;
+}
+
+.container p {
+    color: #34495e; 
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #34495e;
+}
+
+input[type="text"],
+.Text_area_contact,
+.Text_area_contact_small
+ {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #bdc3c7; 
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.Text_area_contact {
+    height: 120px;
+    resize: vertical; 
+}
+
+.Subbut {
+    background-color: #f39c12; 
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease; Smooth transition on hover
+}
+
+.Subbut:hover {
+    background-color: #e67e22; 
+}
+
+
+
+
+
+
+
+
+body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+  }
+
+
+
+
+
+
+
+footer {
+    background-color: #1e73be;
+    color: white;
+    margin-top: 100px;
+  }
+  
+  .footer-container {
+    display: flex;
+    margin-left: 100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 25px 50px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+  
+  .footer-section p {
+    margin-bottom: 5px;
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .footer-section a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .links-social {
+    padding-left: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .social-media p {
+    padding-left: 50px;
+    padding-right: 100px;
+  }
+  
+  .footer-section.newsletter form {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .footer-section.newsletter input {
+    padding: 8px;
+    width: 40%;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    font-size: 14px;
+  }
+  
+  .Footer_button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #f5a623;
+    color: white;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+  }
+  
+  .Footer_button:hover {
+    background-color: #e5941f;
+  
+  }
+  
+  .footer-section-company-info {
+    padding-left: 75px;
+  }
+  
+  .copy {
+    padding-bottom: 2px;
+    margin: 0;
+    text-align: center;
+  }

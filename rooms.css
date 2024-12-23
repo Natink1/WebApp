@@ -123,6 +123,24 @@ body {
     }
     /*scroll button and Title*/
     
+    .tocen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      
+      }
+      
+      
+      .tocen p {
+        margin: 0;
+        max-width: 800px;
+        text-align: justify;
+        letter-spacing: .2px;
+        font-size: 18px;
+        font-family: 'montserrat', sans-serif;
+      }
+      
 
 /*footer elemets*/
 
