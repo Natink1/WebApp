@@ -1,8 +1,9 @@
 /* navigation bar and Headers*/
-.*{
+/* .*{
     display: flex;
     flex-wrap: wrap;
-}
+} */
+
 .navbar {
 
     display: flex;

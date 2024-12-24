@@ -1,8 +1,8 @@
 /* navigation bar and Headers*/
-.*{
+/* .*{
     display: flex;
     flex-wrap: wrap;
-}
+} */
 .navbar {
 
     display: flex;
@@ -219,14 +219,17 @@ body {
     width: 500px;
     border-radius: 25px;   
 }
+.counter-holder{
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
 
 .counter-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 80%;
     max-width: 800px;
-    margin-left: 25%;
-    margin-top: 50px;
     background-color: #ffffff;
     border: 2px solid #007bff;
     border-radius: 15px;
@@ -321,6 +324,12 @@ body {
 
 }
 
+.testimonial-holder{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
 .testimonial-container {
     text-align: center;
     background-color: #ffffff;
@@ -330,8 +339,6 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     width: 80%;
     max-width: 600px;
-    margin-top: 90px;
-    margin-left: 30%;
 }
 
 .testimonial-container h2 {
