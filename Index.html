@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NOVA HOTEL</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
+    
     <!--  navigation bar and Headers-->
     <div class="headera">
 
@@ -93,12 +95,13 @@
         </div>
 
     </div>
+
     <hr class="break">
     <div class="counter-holder">
     <div class="counter-container">
         <div class="counter">
             <h2>Customers</h2>
-            <p id="customer-count">1,234</p>
+            <p id="customer-count"><span datacount="234"></span>0</p>
         </div>
         <div class="counter">
             <h2>Average Rating</h2>
@@ -106,16 +109,24 @@
         </div>
     </div>
     </div>
+
+
+
+
     <hr class="break">
     <div class="testimonial-holder">
     <div class="testimonial-container">
         <h2>Testimonials</h2>
-        <p id="testimonial-text">"Calm, Serene, Retro – What a way to relax and enjoy"</p>
-        <p id="testimonial-author">Mr. and Mrs. Baxter, UK</p>
-        <div class="buttons"> <button class="button" onclick="previousTestimonial()">&#9664;</button> <button
-                class="button" onclick="nextTestimonial()">&#9654;</button> </div>
+        <p id="testimonial-text"></p>
+        <p id="testimonial-author"></p>
+        <div class="buttons"> 
+            <button class="button" id="prevButton" >&#9664;</button>
+            <button class="button" id="nextButton">&#9654;</button> 
+        </div>
     </div>
     </div>
+
+    <script src="script.js"></script>
 
     <footer class="footer">
         <div class="footer-container">
