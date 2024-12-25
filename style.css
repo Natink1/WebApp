@@ -49,10 +49,10 @@
     font-size: 19px;
 }
 
-
-.navbar ul a:active {
-  color: orange;
+.navbar ul a.active {
+  color: #E38E49;
   font-weight: bold;
+  text-decoration: none
 }
 
 .headera {
@@ -300,7 +300,6 @@ html
 .butReadmore:hover {
     background-color: white;
     color: #111111;
-    transition: background-color .5s;
     border: #007bff solid 1px;
 }
 

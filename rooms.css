@@ -51,10 +51,12 @@
 }
 
 
-.navbar ul a:active {
-  color: orange;
+.navbar ul a.active {
+  color: #E38E49;
   font-weight: bold;
+  text-decoration: none
 }
+
 
 .headera {
     height: 100vh;
