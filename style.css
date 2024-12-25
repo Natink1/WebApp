@@ -181,12 +181,20 @@ body {
     color: #111111;
     font-size: 20px;
     font-family: 'montserrat', sans-serif;
-    animation: onsc 1.2s ease-out forwards;
-    animation-timeline: view(1);
+    animation: onsc 1.5s ease-out forwards;
 }
 
 .Welcometxt p{
     width: 75%;
+}
+#hiddenText{
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+html
+{
+  scroll-behavior: smooth;
 }
 .cont1 {
     margin-top: 20px;

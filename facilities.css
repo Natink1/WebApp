@@ -57,7 +57,7 @@
 }
 
 .headera {
-  height: 100vh;
+  height: 30vh;
   background-image: url("/Images/FacilitiesBackground.png"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.718));
   background-size: cover;
   background-repeat: no-repeat;
@@ -127,6 +127,15 @@ body {
 
 /*scroll button and Title*/
 
+@keyframes onsc {
+  0% {
+      transform: translatex(-100%);
+  }
+  100% {
+      transform: translatex(0);
+  }        
+}
+
 
 .tocen {
   display: flex;
@@ -145,6 +154,7 @@ body {
   letter-spacing: .2px;
   font-size: 18px;
   font-family: 'montserrat', sans-serif;
+  animation: onsc 1s ease-out;
 }
 
 .Content_image {

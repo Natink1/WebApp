@@ -56,12 +56,9 @@
   }
   
   .headera {
-    height: 100vh;
-    background-image: url("/Images/FacilitiesBackground.png"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.718));
+    height: 30vh;
+    background-color: #007bff;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-blend-mode: color;
   }
   
   /* navigation bar and Headers*/
