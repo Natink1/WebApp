@@ -10,19 +10,21 @@
 
 <body>
     <!--  navigation bar and Headers-->
-    <div class="headera">
+
+    <div class="headera" style=" background-image: url('Images/FacilitiesBackground.png'), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.718));">
+
 
 
         <div class="mainnav">
             <div class="navbar">
-                <a href="Index.html" class="imgl"><img class="logoimg" src="/Images/Logo.png"></a>
+                <a href="Index.php" class="imgl"><img class="logoimg" src="Images/Logo.png"></a>
 
 
                 <ul class="navonlyul">
-                    <li><a href="/Index.html">Home</a></li>
-                    <li><a href="/facilities.html" class="active">Facilities</a></li>
-                    <li><a href="/rooms.html">Rooms</a></li>
-                    <li><a href="/ContactUs.html">Contact-us</a></li>
+                    <li><a href="Index.php">Home</a></li>
+                    <li><a href="facilities.php" class="active">Facilities</a></li>
+                    <li><a href="rooms.php">Rooms</a></li>
+                    <li><a href="ContactUs.php">Contact-us</a></li>
                     <li><a href="#">Reservation</a></li>
                 </ul>
 
@@ -60,7 +62,7 @@
 
     <div class="Content_image">
         <div class="Content_image1">
-            <img class="Content_img" src="/Images/Gym.png" alt="THE GYM">
+            <img class="Content_img" src="Images/Gym.png" alt="THE GYM">
 
             <div class="img_overlay">
                 <h1>Quality GYM</h1>
@@ -73,7 +75,7 @@
     <h1 class="Fatit">POOLSIDE BAR</h1>
     <div class="Content_image">
         <div class="Content_image1">
-            <img class="Content_img" src="/Images/Pool.png" alt="POOLSIDE BAR">
+            <img class="Content_img" src="Images/Pool.png" alt="POOLSIDE BAR">
             <div class="img_overlay">
                 <h1>Amazing Bar</h1>
                 <p>Unwind by the pool with refreshing cocktails and a relaxed atmosphere at our poolside bar.</p>
@@ -85,7 +87,7 @@
     <h1 class="Fatit">THE SPA</h1>
     <div class="Content_image">
         <div class="Content_image1">
-        <img class="Content_img" src="/Images/spa.png" alt="THE SPA">
+        <img class="Content_img" src="Images/spa.png" alt="THE SPA">
         <div class="img_overlay">
             <h1>Spa</h1>
             <p>Escape to our tranquil spa and indulge in rejuvenating treatments designed to restore your body and mind.</p>
@@ -96,7 +98,7 @@
     <h1 class="Fatit">SWIMMING POOL</h1>
     <div class="Content_image">
         <div class="Content_image1">
-        <img class="Content_img" src="/Images/SWIMMING.png" alt="SWIMMING POOL">
+        <img class="Content_img" src="Images/SWIMMING.png" alt="SWIMMING POOL">
         <div class="img_overlay">
             <h1>Clean Warm Pool</h1>
             <p>Enjoy a leisurely swim or simply relax by the poolside in our tranquil oasis.</p>

@@ -1,3 +1,5 @@
+//testimonials slide
+
 const testimonials = [
     {
         text: "Amazing stay! Friendly staff, comfortable room, and delicious food.",
@@ -14,8 +16,11 @@ const testimonials = [
     {
         text: "Great value for the price. Comfortable and convenient.",
         author: "Mr. Natnael Mola"
+    },
+    {
+        text: "I had a great time at the hotel. The staff was friendly and the room was clean and comfortable.",
+        author: "Kaleab Mulugeta"
     }
-
 ];
 
 let currentTestimonialIndex = 0;
@@ -46,12 +51,13 @@ nextButton.addEventListener('click', () => {
     showTestimonial(currentTestimonialIndex);
 });
 
-// Show the initial testimonial
 showTestimonial(currentTestimonialIndex);
 
+//testimonials slide//
 
 
 
+// text toggle
 
 const hiddenText = document.getElementById('hiddenText');
 const toggleButton = document.getElementById('toggle-Button');
@@ -69,8 +75,7 @@ toggleButton.addEventListener('click', () => {
 
 });
 
-
-
+// text toggle //
 
 
 

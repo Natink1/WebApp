@@ -4,25 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rooms</title>
-    <link rel="stylesheet" href="rooms.css">
+    <title>Contact-us</title>
+    <link rel="stylesheet" href="ContactUs.css">
 </head>
 
 <body>
-    <!--  navigation bar and Headers-->
+
     <div class="headera">
 
 
         <div class="mainnav">
             <div class="navbar">
-                <a href="Index.html" class="imgl"><img class="logoimg" src="/Images/Logo.png"></a>
+                <a href="Index.php" class="imgl"><img class="logoimg" src="Images/Logo.png"></a>
 
 
                 <ul class="navonlyul">
-                    <li><a href="/Index.html">Home</a></li>
-                    <li><a href="/facilities.html">Facilities</a></li>
-                    <li><a href="/rooms.html" class="active">Rooms</a></li>
-                    <li><a href="/ContactUs.html">Contact-us</a></li>
+                    <li><a href="Index.php">Home</a></li>
+                    <li><a href="facilities.php">Facilities</a></li>
+                    <li><a href="rooms.php">Rooms</a></li>
+                    <li><a href="ContactUs.php" class="active">Contact-us</a></li>
                     <li><a href="#">Reservation</a></li>
                 </ul>
 
@@ -36,44 +36,38 @@
             <p>Discover luxury and comfort</p>
 
         </div>
+        
         <!-- <div class="scrollbutton">
             <h3>Scroll</h3>
             <img class="scrollbuttonimg" src="/Images/Scroll button.png">
         </div> -->
-</div>
 
+    </div>
+<h1 class="Header_contact">Contact-US</h1>
+<div class="cont11">
+    <div class="container">
+        <h2>WE ARE HERE FOR YOU</h2>
+        <p>AT NOVA Hotel, we take our customers seriously. Do you have any enquiries, complaints or requests, please forward it to our support desk and we will get back to you as soon as possible.</p>
+        <form>
+            <label for="name">Name</label>
+            <input class=" Text_area_contact_small" type="text" id="name" name="name" required>
 
-    <div class="Facpar">
-        <div class="tocen">
-            <h1>ROOMS AND RATES</h1>
-            <p>Each of our bright, light-flooded rooms come with everything you could possibly need for a comfortable stay. And yes, 
-                comfort isn’t our only objective, we also value good design, sleek contemporary furnishing complemented 
-                by the rich tones of nature’s palette as visible from our rooms’ sea-view windows and terraces. </p>
-        </div>
+            <label  for="email">Email Address</label>
+            <input class=" Text_area_contact_small" type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea class="Text_area_contact" id="message" name="message" required></textarea>
+            <div class="Subbutcont">
+                <button class="Subbut" type="submit">Submit</button>
+            </div>
+        </form>
+          
     </div>
 
 </div>
 
 
-<div class="Content_image">
-    <h1>Single Room</h1>
-    <img class="Content_img" src="/Images/SingleRoom.png" alt="Single Room">
-    <div class="Content_image">
-    <h1>Double Room</h1>
-    <img class="Content_img" src="/Images/DoubleRoom.png" alt="Double Room">
-</div>
-<div class="Content_image">
-    <h1>Twin Room</h1>
-    <img class="Content_img" src="/Images/TwinRoom.png" alt="Twin Room">
-    </div>
-</div>
-
-
-
-
-
-
-
+<?php include('first.php'); ?>
 
 
 
@@ -106,12 +100,13 @@
                 <p>Subscribe to our newsletter</p>
                 <form>
                     <input type="email" placeholder="Email Address" required>
-                    <button type="submit">OK</button>
+                    <button class="Footer_button" type="submit">OK</button>
                 </form>
             </div>
         </div>
         <h4 class="copy">&copy;2022 Nova Hotel. All Rights Reserved. Powerd By Nati</h3>
     </footer>
+
 </body>
 
 </html>

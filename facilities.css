@@ -59,7 +59,6 @@
 
 .headera {
   height: 30vh;
-  background-image: url("/Images/FacilitiesBackground.png"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.718));
   background-size: cover;
   background-repeat: no-repeat;
   background-size: 100%;

@@ -56,8 +56,8 @@
 }
 
 .headera {
+    background-image: url('Images/FBackground.png'), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.718));
     height: 100vh;
-    background-image: url("/Images/Fbackground.png"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.718));
     background-size: cover;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -187,7 +187,7 @@ body {
 .Welcometxt p{
     width: 75%;
 }
-#hiddenText{
+.hiddenText{
   display: none;
   overflow: hidden;
   transition: max-height 0.5s ease;

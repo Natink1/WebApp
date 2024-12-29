@@ -12,18 +12,18 @@
 <body>
     
     <!--  navigation bar and Headers-->
-    <div class="headera">
-
+    <div class="headera" style=" background-image: url('Images/FBackground.png'), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.718));">
+    
 
         <div class="mainnav">
             <div class="navbar">
-                <a href="Index.html" class="imgl"><img class="logoimg" src="/Images/Logo.png"></a>
+                <a href="Index.php" class="imgl"><img class="logoimg" src="Images/Logo.png"></a>
 
                 <ul class="navonlyul">
-                    <li><a href="/Index.html" class="active">Home</a></li>
-                    <li><a href="/facilities.html">Facilities</a></li>
-                    <li><a href="/rooms.html">Rooms</a></li>
-                    <li><a href="/ContactUs.html">Contact-us</a></li>
+                    <li><a href="Index.php" class="active">Home</a></li>
+                    <li><a href="facilities.php">Facilities</a></li>
+                    <li><a href="rooms.php">Rooms</a></li>
+                    <li><a href="ContactUs.php">Contact-us</a></li>
                     <li><a href="#">Reservation</a></li>
                 </ul>
 
@@ -39,7 +39,7 @@
         </div>
         <div class="scrollbutton">
             <h3>Scroll</h3>
-            <a href="#testimonial-holder2"><img class="scrollbuttonimg" src="/Images/Scroll button.png">
+            <a href="#testimonial-holder2"><img class="scrollbuttonimg" src="Images/Scroll button.png">
                
             </a>
         </div>
@@ -77,7 +77,7 @@
         <div class="cont1img">
 
 
-            <img class="bed1img" src="/Images/Bed1.png">
+            <img class="bed1img" src="Images/Bed1.png">
         </div>
 
     </div>
@@ -94,7 +94,7 @@
         </div>
 
         <div class="cont2img">
-            <img class="bed2img" src="/Images/Vac.png">
+            <img class="bed2img" src="Images/Vac.png">
         </div>
 
     </div>
@@ -128,7 +128,6 @@
         </div>
     </div>
     </div>
-
     
 
     <footer class="footer">
