@@ -20,7 +20,15 @@ const testimonials = [
     {
         text: "I had a great time at the hotel. The staff was friendly and the room was clean and comfortable.",
         author: "Kaleab Mulugeta"
-    }
+    },
+    {   text: "This hotel exceeded all expectations with its impeccable service, luxurious amenities, and breathtaking views.",
+        author: "Ms. Mariamawit Seifu"
+    },
+    {
+       text: " We were blown away by the exceptional value and quality of our stay at this hotel.",
+       author : "Mr. Belay Addisu"
+    },
+    
 ];
 
 let currentTestimonialIndex = 0;

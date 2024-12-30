@@ -69,7 +69,7 @@
                 you into an environment made for leisure.
                 Take your mind off the day-to-day of home
                 life and find a private paradise for yourself.</p>
-            <a href="rooms.html"> <button class="butReadmore">Read More</button></a>
+            <a href="rooms.php"> <button class="butReadmore">Read More</button></a>
 
         </div>
 
@@ -104,7 +104,7 @@
     <div class="counter-container">
         <div class="counter">
             <h2>Customers</h2>
-            <p id="customer-count"><span datacount="234"></span>0</p>
+            <p id="customer-count">234</p>
         </div>
         <div class="counter">
             <h2>Average Rating</h2>
@@ -112,9 +112,6 @@
         </div>
     </div>
     </div>
-
-
-
 
     <hr class="break">
     <div class="testimonial-holder" id="testimonial-holder2">
@@ -157,8 +154,8 @@
 
             <div class="footer-section newsletter">
                 <p>Subscribe to our newsletter</p>
-                <form>
-                    <input type="email" placeholder="Email Address" required>
+                <form method="post">
+                    <input type="email" placeholder="Email Address" name="email1" required>
                     <button type="submit">OK</button>
                 </form>
             </div>
@@ -169,3 +166,7 @@
 </body>
 <script src="script.js"></script>
 </html>
+
+<?php
+include('subscribe.php');
+?>

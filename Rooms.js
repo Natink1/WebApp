@@ -1,8 +1,6 @@
 const hiddents = document.querySelectorAll('.hidet');
 const Button = document.querySelectorAll('.downbut');
 
-
-
 Button.forEach((Button, index) =>{
 Button.addEventListener('click', () => {
     const hiddent = hiddents[index];
@@ -16,6 +14,8 @@ Button.addEventListener('click', () => {
 });
 }
 );
+
+
 
 // const hidden2 = document.getElementById('hidden2');
 // const Button2 = document.getElementById('morebut2');

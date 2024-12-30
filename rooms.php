@@ -16,7 +16,8 @@
 
         <div class="mainnav">
             <div class="navbar">
-                <a href="Index.php" class="imgl"><img class="logoimg" src="/Images/Logo.png"></a>
+                <a href="Index.php" class="imgl">
+                    <img class="logoimg" src="Images/Logo.png"></a>
 
 
                 <ul class="navonlyul">
