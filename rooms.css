@@ -201,11 +201,17 @@ body {
           word-spacing: .01em;
           line-height: 1.5;
           padding-right: 15%;
+          
+          
         }
 .hidet{
   display: none;
+  
 }
-    
+.hidet.block {
+   max-height: 1000px; 
+   transition: display 2s ease;
+  }
 
 /*footer elemets*/
 

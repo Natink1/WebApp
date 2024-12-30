@@ -3,6 +3,19 @@
     display: flex;
     flex-wrap: wrap;
 } */
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #E38E49;
+  outline: 1px solid slategrey;
+}
 .navbar {
 
     display: flex;
@@ -157,18 +170,7 @@ body {
           flex-direction: column; 
         }
       }  
-    
-
-      @keyframes onsc {
-        0% {
-            transform: translatex(-100%);
-        }
-        100% {
-            transform: translatex(0);
-        }        
-      }
-
-
+  
 .Welcometxt {
     
     display: flex;
@@ -181,8 +183,9 @@ body {
     color: #111111;
     font-size: 20px;
     font-family: 'montserrat', sans-serif;
-    animation: onsc 1.5s ease-out forwards;
+    animation: onsc1 1.5s ease-out forwards;
 }
+
 
 .Welcometxt p{
     width: 75%;
@@ -395,6 +398,18 @@ html
 .button:hover {
     background-color: #0056b3;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*footer elemets*/
 

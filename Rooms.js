@@ -1,13 +1,16 @@
 const hiddents = document.querySelectorAll('.hidet');
 const Button = document.querySelectorAll('.downbut');
 
+
 Button.forEach((Button, index) =>{
 Button.addEventListener('click', () => {
     const hiddent = hiddents[index];
     if (hiddent.style.display === "none" || hiddent.style.display === ""){
-        hiddent.style.display = "list-item";
+        hiddent.style.display = "block";
+        Button.innerHTML = '&#9650';
     }
     else{
+        Button.innerHTML = '&#9660';
         hiddent.style.display = 'none';
     }
 

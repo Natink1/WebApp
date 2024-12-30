@@ -47,7 +47,7 @@
 
     </div>
 
-    <div class="Welcometxt">
+    <div class="Welcometxt" id ="hovered">
         <p>
             Welcome to NOVA Hotel where comfort meets luxury at an affordable price.
             Discover the perfect blend of elegance and convenience at our tranquil oasis
@@ -60,6 +60,7 @@
         </p>
 
     </div>
+    
     <hr class="break">
 
     <div class="cont1">
@@ -81,6 +82,7 @@
         </div>
 
     </div>
+    
     <div class="cont2">
         <div class="cont2text">
             <h1>Leave your worries in 
@@ -126,6 +128,10 @@
     </div>
     </div>
     
+
+
+
+
 
     <footer class="footer">
         <div class="footer-container">
