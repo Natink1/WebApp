@@ -1,5 +1,4 @@
 //testimonials slide
-
 const testimonials = [
     {
         text: "Amazing stay! Friendly staff, comfortable room, and delicious food.",

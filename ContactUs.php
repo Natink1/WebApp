@@ -48,7 +48,7 @@
     <div class="container">
         <h2>WE ARE HERE FOR YOU</h2>
         <p>AT NOVA Hotel, we take our customers seriously. Do you have any enquiries, complaints or requests, please forward it to our support desk and we will get back to you as soon as possible.</p>
-        <form>
+        <form method="post">
             <label for="name">Name</label>
             <input class=" Text_area_contact_small" type="text" id="name" name="name" required>
 

@@ -503,3 +503,41 @@ html
 
   /*footer elemets*/
   
+
+  /* Media Queries */
+@media screen and (max-width: 768px) {
+  /* Navigation Bar */
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Header Section */
+  .header {
+    text-align: center;
+  }
+
+  /* Content Sections */
+  .section-content {
+    max-width: 90%;
+  }
+
+  .section-image {
+    width: 100%;
+  }
+
+  /* Testimonial Section */
+  .testimonial-container {
+    max-width: 90%;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
