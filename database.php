@@ -3,7 +3,7 @@
     $db_server = "localhost";
     $db_user = "root";
     $db_pass = "";
-    $db_table = "subscribe";
+    $db_table = "subscribe_email";
 
     $db_con = "";
 

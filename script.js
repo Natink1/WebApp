@@ -1,3 +1,5 @@
+
+
 //testimonials slide
 const testimonials = [
     {
@@ -38,7 +40,8 @@ const testimonialText = document.getElementById('testimonial-text');
 const testimonialAuthor = document.getElementById('testimonial-author');
 
 function showTestimonial(index) {
-    testimonialText.textContent = testimonials[index].text;
+    
+      testimonialText.textContent = testimonials[index].text;
     testimonialAuthor.textContent = testimonials[index].author;
 }
 
@@ -84,3 +87,16 @@ toggleButton.addEventListener('click', () => {
 
 // text toggle //
 
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+   
+   });
+  });   
+  
+  const welcomeText = document.getElementById('hovered');
+  
+  
+  observer.observe(welcomeText);

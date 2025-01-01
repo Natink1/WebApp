@@ -1,5 +1,11 @@
+<?php
+include('subscribe.php');
+?>
+
 <!DOCTYPE html>
+
 <html lang="en">
+
 
 <head>
     <meta charset="UTF-8">
@@ -160,7 +166,7 @@
 
             <div class="footer-section newsletter">
                 <p>Subscribe to our newsletter</p>
-                <form method="post">
+                <form method="post" action="">
                     <input type="email" placeholder="Email Address" name="email1" required>
                     <button type="submit">OK</button>
                 </form>
@@ -169,11 +175,11 @@
         <h4 class="copy">&copy;2022 Nova Hotel. All Rights Reserved. Powerd By Nati</h3>
     </footer>
 
-</body>
+    <?php
+include('subscribe.php');
+?>
 <script src="script.js"></script>
+</body>
+
 </html>
 
-<?php
-include('subscribe.php');
-
-?>

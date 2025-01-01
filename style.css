@@ -171,20 +171,27 @@ body {
         }
       }  
   
-.Welcometxt {
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    letter-spacing: .01em;
-    word-spacing: .1em;
-    line-height: 1.5;
-    color: #111111;
-    font-size: 20px;
-    font-family: 'montserrat', sans-serif;
-    animation: onsc1 1.5s ease-out forwards;
-}
+      .Welcometxt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        letter-spacing: .01em;
+        word-spacing: .1em;
+        line-height: 1.5;
+        color: #111111;
+        font-size: 20px;
+        font-family: 'montserrat', sans-serif;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: all 0.8s ease-out;
+      }
+      .Welcometxt.show{
+
+        transform: translateY(0px);
+        opacity: 1;
+
+      }
 
 
 .Welcometxt p{
@@ -375,8 +382,17 @@ html
     font-size: 1.2em;
     color: #555;
     margin: 10px 0;
+  
+}
+.fade-out {
+  opacity: 0;
+  transition: opacity 5s ease-out; 
 }
 
+.fade-in {
+  opacity: 1;
+  transition: opacity 5s ease-in; 
+}
 .buttons {
     margin-top: 20px;
 }

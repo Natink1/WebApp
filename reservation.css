@@ -1,0 +1,157 @@
+.navbar {
+  
+    display: flex;
+    width: 100%;
+  }
+  
+  .imgl {
+    margin-left: 200px;
+    width: 80px;
+  }
+  
+  .imgl :hover {
+    transform: scale(1.1);
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  .logoimg {
+    width: 130px;
+  }
+  
+  .navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 35%;
+    padding-top: 8px;
+    list-style-type: none;
+  }
+  
+  .navbar ul a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+  }
+  
+  .navbar ul a:hover {
+    color: #E38E49;
+    text-underline-offset: 5px;
+    text-decoration: underline;
+    transition: font-size 0.1s;
+    font-size: 19px;
+  }
+  
+  .navbar ul a.active {
+    color: #E38E49;
+    font-weight: bold;
+    text-decoration: none
+  }
+
+ 
+
+  .headera {
+    height: 30vh;
+    background-color: #007bff;
+    background-size: cover;
+  }
+  
+  /* navigation bar and Headers*/
+  
+
+  .reservationtitle{
+    text-align: center;
+  }
+
+
+
+/*Reservation Form*/
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+
+  form {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+  }
+
+  .form-container {
+    display: flex; 
+    justify-content: space-between;
+  }
+
+  .form-container > div {
+    flex: 1; 
+    margin-right: 20px;
+  }
+
+  .form-container > div:last-child {
+    margin-right: 0;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="email"],
+  textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #f5a623;
+    border-radius: 3px;
+    
+    
+  }
+
+  textarea {
+    resize: vertical;
+    height: 100px;
+
+  }
+
+  select {
+    
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #f5a623;
+    border-radius: 3px;
+  }
+
+  .booknow {
+    background-color: #f5a623;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin: 20px auto 0;
+  }
+
+  .booknow:hover {
+    background-color: white;
+    border-color: #f5a623;
+    color: black;
+    border: solid .5px #f5a623;
+    transition: 0.5s ease-in-out;
+
+  }
+
+  /*Reservation Form*/
