@@ -30,7 +30,7 @@ include('subscribe.php');
                     <li><a href="facilities.php">Facilities</a></li>
                     <li><a href="rooms.php">Rooms</a></li>
                     <li><a href="ContactUs.php">Contact-us</a></li>
-                    <li><a href="#">Reservation</a></li>
+                    <li><a href="reservation.php">Reservation</a></li>
                 </ul>
 
 

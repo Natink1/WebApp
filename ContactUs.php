@@ -1,5 +1,6 @@
 <?php
 include('contactus_data.php');
+include('subscribe.php');
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +28,7 @@ include('contactus_data.php');
                     <li><a href="facilities.php">Facilities</a></li>
                     <li><a href="rooms.php">Rooms</a></li>
                     <li><a href="ContactUs.php" class="active">Contact-us</a></li>
-                    <li><a href="#">Reservation</a></li>
+                    <li><a href="reservation.php">Reservation</a></li>
                 </ul>
 
 
@@ -102,8 +103,8 @@ include('contactus_data.php');
 
             <div class="footer-section newsletter">
                 <p>Subscribe to our newsletter</p>
-                <form>
-                    <input type="email" placeholder="Email Address" required>
+                <form method="post" >
+                    <input type="email" placeholder="Email Address" name="email1" required>
                     <button class="Footer_button" type="submit">OK</button>
                 </form>
             </div>

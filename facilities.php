@@ -25,7 +25,7 @@
                     <li><a href="facilities.php" class="active">Facilities</a></li>
                     <li><a href="rooms.php">Rooms</a></li>
                     <li><a href="ContactUs.php">Contact-us</a></li>
-                    <li><a href="#">Reservation</a></li>
+                    <li><a href="reservation.php">Reservation</a></li>
                 </ul>
 
 
@@ -147,9 +147,9 @@
 
             <div class="footer-section newsletter">
                 <p>Subscribe to our newsletter</p>
-                <form method="post">
+                <form method="post" >
                     <input type="email" placeholder="Email Address" name="email1" required>
-                    <button type="submit">OK</button>
+                    <button class="Footer_button" type="submit">OK</button>
                 </form>
             </div>
         </div>
