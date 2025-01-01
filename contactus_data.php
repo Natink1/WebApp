@@ -20,9 +20,9 @@ if($result) {
     window.location = '" . $_SERVER['PHP_SELF'] . "';
     </script>";
 
-
-
-} else {
+}
+ else 
+{
 echo "Error: ";
 }    
 

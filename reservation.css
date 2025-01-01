@@ -118,15 +118,13 @@ body {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #f5a623;
-    border-radius: 3px;
-    
-    
+    border-radius: 5px;
+
   }
 
   textarea {
     resize: vertical;
     height: 100px;
-
   }
 
   select {
