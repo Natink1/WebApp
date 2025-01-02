@@ -98,7 +98,7 @@
     <h1 class="Fatit">SWIMMING POOL</h1>
     <div class="Content_image">
         <div class="Content_image1">
-        <img class="Content_img" src="Images/SWIMMING.png" alt="SWIMMING POOL">
+        <img class="Content_img" src="Images/swimming.png" alt="SWIMMING POOL">
         <div class="img_overlay">
             <h1>Clean Warm Pool</h1>
             <p>Enjoy a leisurely swim or simply relax by the poolside in our tranquil oasis.</p>

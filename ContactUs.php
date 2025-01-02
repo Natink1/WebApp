@@ -36,13 +36,6 @@ include('contactus_data.php');
             </div>
         </div>
 
-        <div class="firstTitle">
-            <h2>Welcome to</h2>
-            <h1><b>Nova Hotel</b></h1>
-            <p>Discover luxury and comfort</p>
-
-        </div>
-        
         <!-- <div class="scrollbutton">
             <h3>Scroll</h3>
             <img class="scrollbuttonimg" src="/Images/Scroll button.png">

@@ -136,41 +136,6 @@ body {
         animation: slide 1s ease-out forwards;
     }
     /*scroll button and Title*/
-
-
-    @media screen and (max-width: 768px) { 
-        .navbar {
-          flex-direction: column; 
-          text-align: center;
-        }
-      
-        .navonlyul {
-          flex-direction: column; 
-          align-items: center;
-        }
-      
-        .navonlyul li {
-          margin: 10px 0; 
-        }
-      
-        .firstTitle {
-          font-size: 2rem; 
-        }
-      
-        .cont1img, .cont2img {
-          width: 100%; 
-        }
-      
-        .cont1text, .cont2text {
-          width: 100%; 
-        }
-      }
-      
-      @media screen and (max-width: 480px) { 
-        .footer-container {
-          flex-direction: column; 
-        }
-      }  
   
       .Welcometxt {
         display: flex;
@@ -521,40 +486,81 @@ html
   /*footer elemets*/
   
 
-  /* Media Queries */
+  /* Footer - Responsive for Mobile */
 @media screen and (max-width: 768px) {
-  /* Navigation Bar */
-  .navbar {
-    flex-direction: column;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* Header Section */
-  .header {
-    text-align: center;
-  }
-
-  /* Content Sections */
-  .section-content {
-    max-width: 90%;
-  }
-
-  .section-image {
-    width: 100%;
-  }
-
-  /* Testimonial Section */
-  .testimonial-container {
-    max-width: 90%;
-  }
-
-  /* Footer */
   .footer-container {
     flex-direction: column;
     align-items: center;
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .footer-section {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .footer-section h2 {
+    font-size: 16px;
+  }
+
+  .footer-section p, 
+  .footer-section a {
+    font-size: 14px;
+  }
+
+  .links-social {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .social-media p {
+    padding: 5px 0;
+  }
+
+  .footer-section.newsletter form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section.newsletter input {
+    width: 80%;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .footer-section.newsletter button {
+    width: 50%;
+    font-size: 14px;
+  }
+
+  .footer-section-company-info {
+    padding-left: 0;
+  }
+
+  .copy {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
+
+/* Additional for small*/
+@media screen and (max-width: 480px) {
+  .footer-section p, 
+  .footer-section a {
+    font-size: 12px;
+  }
+
+  .footer-section.newsletter input {
+    font-size: 12px;
+  }
+
+  .footer-section.newsletter button {
+    font-size: 12px;
+  }
+
+  .footer-section h2 {
+    font-size: 14px;
   }
 }

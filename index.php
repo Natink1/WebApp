@@ -175,9 +175,6 @@ include('subscribe.php');
         <h4 class="copy">&copy;2022 Nova Hotel. All Rights Reserved. Powerd By Nati</h3>
     </footer>
 
-    <?php
-include('subscribe.php');
-?>
 <script src="script.js"></script>
 </body>
 
