@@ -15,6 +15,7 @@ $sql = "INSERT INTO contactus (name, email, message)
 $result = mysqli_query($db_con, $sql);
 
 if($result) {
+
     echo "<script>
     alert('Message sent successfully');
     window.location = '" . $_SERVER['PHP_SELF'] . "';

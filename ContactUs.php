@@ -1,6 +1,7 @@
 <?php
-include('contactus_data.php');
 include('subscribe.php');
+include('contactus_data.php');
+
 ?>
 
 <!DOCTYPE html>
@@ -71,8 +72,6 @@ include('subscribe.php');
 
 </div>
 
-
-<?php include('first.php'); ?>
 
 
 
