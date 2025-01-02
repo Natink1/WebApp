@@ -12,11 +12,11 @@
 
     <div class="mainnav">
       <div class="navbar">
-        <a href="Index.php" class="imgl"><img class="logoimg" src="Images/Logo.png"></a>
+        <a href="index.php" class="imgl"><img class="logoimg" src="Images/Logo.png"></a>
 
 
         <ul class="navonlyul">
-          <li><a href="Index.php">Home</a></li>
+          <li><a href="index.php">Home</a></li>
           <li><a href="facilities.php">Facilities</a></li>
           <li><a href="rooms.php">Rooms</a></li>
           <li><a href="ContactUs.php">Contact-us</a></li>

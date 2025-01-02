@@ -25,7 +25,7 @@ include('contactus_data.php');
 
 
                 <ul class="navonlyul">
-                    <li><a href="Index.php">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="facilities.php">Facilities</a></li>
                     <li><a href="rooms.php">Rooms</a></li>
                     <li><a href="ContactUs.php" class="active">Contact-us</a></li>
