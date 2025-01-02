@@ -81,6 +81,5 @@ toggleButton.addEventListener('click', () => {
   }
 
 });
-
 // text toggle //
 
