@@ -9,7 +9,7 @@ $email = filter_input(INPUT_POST, 'email');
 $name = filter_input(INPUT_POST, 'name', );
 $message = filter_input(INPUT_POST, 'message', );
 
-$sql = "INSERT INTO contactus (name, email, message)
+$sql = "INSERT INTO contactus (name, email, text)
  VALUES ('$name', '$email', '$message')";
 
 $result = mysqli_query($db_con, $sql);

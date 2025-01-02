@@ -69,7 +69,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .headera {
-    background-image: url('Images/FBackground.png'), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.718));
+    
+    background-image: url("Images/Fbackground.png"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.718));
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;

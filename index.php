@@ -18,7 +18,7 @@ include('subscribe.php');
 <body>
     
     <!--  navigation bar and Headers-->
-    <div class="headera" style=" background-image: url('Images/FBackground.png'), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.718));">
+    <div class="headera">
     
 
         <div class="mainnav">
