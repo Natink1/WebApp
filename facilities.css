@@ -99,6 +99,22 @@ body {
   }
   
 
+  @media (min-width: 1920px) {
+
+    .navbar{
+      padding-left: 40px;
+    }
+    
+    
+    .scrollbutton{
+      padding-top: 150px;
+      
+    }
+    
+    
+    }
+    
+
 
 
 @keyframes slide {
