@@ -84,7 +84,6 @@ toggleButton.addEventListener('click', () => {
   }
 
 });
-
 // text toggle //
 
 const observer = new IntersectionObserver(entries => {

@@ -275,12 +275,13 @@ body {
       .Content_image img {
         max-width: 900px;
         /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); */
-
+        border-radius: 24px;
       }
       
       .Content_image p{
         display: flex;
         width: 50%;
+        
       
       }
 
@@ -291,6 +292,7 @@ body {
         justify-content: center;
         align-items: center;  
         padding-bottom: 5px;
+        border-radius: 24px;
       }
       
       .downbut {
@@ -325,10 +327,6 @@ body {
   display: none;
   
 }
-.hidet.block {
-   max-height: 1000px; 
-   transition: display 2s ease;
-  }
 
 
 
