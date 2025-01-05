@@ -4,6 +4,7 @@
     flex-wrap: wrap;
 } */
 
+
 body::-webkit-scrollbar {
   width: 10px;
 }
@@ -85,6 +86,9 @@ body {
     margin: 0;
 }
 
+.menu-toggle{
+display: none;
+}
 
 
 @keyframes slide {
@@ -96,6 +100,89 @@ body {
         transform: translateX(0);
     }
 }
+
+
+/* Hide Navbar Links for Mobile */
+@media (max-width: 768px) {
+  .navbar {
+      position: fixed;
+      left: -50px; 
+      top: 0;
+      height: 100%;
+      width: 200px;
+      background-color: #333;
+      flex-direction: column;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+      z-index: 1000;
+  }
+
+  .menu-toggle{
+    display: block;
+    }
+    
+
+    .headera {
+    
+      background-image: url("Images/Fbackground.png"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.718));
+      height: 100vh;
+      background-size: cover; /* Ensures the image covers the whole area */
+      background-repeat: no-repeat;
+      background-position: center; /* Ensures the image is centered */
+      background-blend-mode: color;
+  }
+
+  .imgl{
+    opacity: 0;
+    pointer-events: none;
+  }
+ 
+  .navbar.show {
+      transform: translateX(0); 
+  }
+
+  .navbar ul {
+      flex-direction: column;
+      padding-left: 50px;
+  }
+
+  .navbar ul a {
+      color: white;
+      text-align: left;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-size: 16px;
+  
+  }
+
+  .navbar ul a:hover {
+      background-color: #444;
+  }
+
+  .menu-toggle {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-size: 30px;
+      color: white;
+      background-color: #333;
+      border: none;
+      padding: 15px;
+      cursor: pointer;
+      z-index: 1100;
+      border-radius: 5px;
+  }
+
+ 
+  .menu-toggle:focus {
+      outline: none;
+  }
+}
+
+
+
+
+
 
 
 /* Scroll button and Title*/
@@ -136,6 +223,50 @@ body {
         animation: slide 1s ease-out forwards;
     }
     /*scroll button and Title*/
+
+
+
+    @media (max-width: 768px) {
+      .scrollbutton {
+          margin-top: 5%;
+      }
+  
+      .scrollbuttonimg {
+          width: 40px; /* Adjust button size */
+      }
+  
+      .scrollbutton h3 {
+          font-size: 18px; /* Smaller font size */
+          margin-bottom: 5px;
+      }
+  
+      .firstTitle {
+          text-align: center; /* Center the text on mobile */
+          padding-left: 5%; /* Reduce left padding */
+          padding-top: 100px; /* Reduce top padding */
+          font-size: 28px; /* Smaller font size */
+      }
+  
+      .firstTitle h1 {
+          font-size: 40px; /* Adjust header size for mobile */
+      }
+  
+      .firstTitle h2 {
+          font-size: 24px; /* Adjust subheader size */
+      }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
   
       .Welcometxt {
         display: flex;
@@ -170,10 +301,46 @@ body {
   transition: max-height 0.5s ease;
 }
 
+
+/* Responsive styles for screens smaller than 768px */
+@media (max-width: 768px) {
+  .Welcometxt {
+      justify-content: flex-start; /* Align text to the left */
+      text-align: left; /* Align text left for better readability on mobile */
+      font-size: 16px; /* Adjust font size for smaller screens */
+      width: 90%; /* Make the paragraph width responsive */
+      padding: 0 5%; /* Add some horizontal padding */
+      opacity: 1; /* Ensure the opacity is visible for mobile view */
+      transform: translateY(0); /* Keep the element visible without the animation on mobile */
+  }
+
+  .Welcometxt p {
+      width: 100%; /* Ensure text takes full width on mobile */
+  }
+
+  #hiddenText {
+      display: block; /* Show the hidden text by default on mobile */
+      max-height: 1000px; /* Make sure it’s fully visible */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 html
 {
   scroll-behavior: smooth;
 }
+
+
+
 .cont1 {
     margin-top: 20px;
     display: flex;
@@ -218,47 +385,6 @@ html
     width: 500px;
     border-radius: 25px;   
 }
-.counter-holder{
-  display: flex;
-  justify-content: center;
-  padding-top: 30px;
-}
-
-.counter-container {
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    max-width: 800px;
-    background-color: #ffffff;
-    border: 2px solid #007bff;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.counter {
-    text-align: center;
-}
-
-.counter h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #333333;
-}
-
-.counter p {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #007bff;
-}
-
-.rating {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #007bff;
-}
 
 .butReadmore {
     font-size: 14px;
@@ -280,6 +406,68 @@ html
     color: #111111;
     border: #007bff solid 1px;
 }
+
+
+
+/* Responsive styles for screens smaller than 768px */
+@media (max-width: 768px) {
+  .cont1 {
+      flex-direction: column; /* Stack content vertically */
+      margin-top: 10px;
+      align-items: center; /* Center the content horizontally */
+  }
+
+  .cont1img img {
+      width: 90%; /* Adjust image size for smaller screens */
+      padding: 0; /* Remove excessive padding */
+      margin: 20px 20px; /* Add margin for spacing */
+  }
+
+  .cont1text {
+      padding-top: 20px; /* Reduce padding for smaller screens */
+      width: 90%; /* Adjust width for better fit on mobile */
+      padding-left: 5%; /* Center-align text content */
+      text-align: center; /* Center-align text */
+  }
+
+  .cont1text h1 {
+      font-size: 22px; /* Reduce font size for readability */
+  }
+
+  .cont1text p {
+      font-size: 16px; /* Adjust font size for better readability */
+      padding-right: 0; /* Remove right padding */
+  }
+
+  .butReadmore {
+      font-size: 12px; /* Adjust button font size */
+      width: 80px; /* Adjust button width */
+      height: 35px; /* Adjust button height */
+      margin: 10px auto; /* Center-align the button */
+  }
+
+  .break {
+      width: 80%; /* Adjust break width */
+      margin-top: 20px; /* Reduce margin for mobile view */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -321,6 +509,134 @@ html
     padding-right: 15%;
 
 }
+
+
+
+/* Responsive styles for screens smaller than 768px */
+@media (max-width: 768px) {
+  .cont2 {
+      flex-direction: column; /* Stack content vertically */
+      margin-top: 10px;
+  }
+
+  .cont2img img {
+      width: 90%; /* Adjust image size for smaller screens */
+      padding: 0; /* Remove excessive padding */
+      margin: 20px 20px; /* Add margin for spacing */
+  }
+
+  .cont2text {
+      padding-top: 20px; /* Reduce padding for smaller screens */
+      width: 90%; /* Adjust width for better fit on mobile */
+      padding-left: 5%; /* Center-align content */
+      text-align: center; /* Center-align text for a cleaner look */
+  }
+
+  .cont2text h1 {
+      font-size: 22px; /* Reduce font size */
+  }
+
+  .cont2text p {
+      font-size: 16px; /* Adjust font size */
+      padding-right: 0; /* Remove right padding */
+  }
+
+  .butReadmore {
+      font-size: 12px; /* Adjust button font size */
+      width: 80px; /* Adjust button width */
+      height: 35px; /* Adjust button height */
+      margin: 10px auto; /* Center-align the button */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.counter-holder {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  max-width: 800px;
+  background-color: #ffffff;
+  border: 2px solid #007bff;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  gap: 20px;
+}
+
+.counter {
+  text-align: center;
+}
+
+.counter h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.counter p {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #007bff;
+}
+
+
+@media (max-width: 768px) {
+  .counter-container {
+      flex-direction: column; 
+      align-items: center;   
+      padding: 10px;         
+      width: 90%;            
+  }
+
+  .counter h2 {
+      font-size: 1.5em;      
+  }
+
+  .counter p {
+      font-size: 2em;        
+  }
+}
+
+
+
+
+
+
+
+
+
 
 .testimonial-holder{
     display: flex;
@@ -486,6 +802,13 @@ html
   /*footer elemets*/
   
 
+
+
+
+
+
+
+
   /* Footer - Responsive for Mobile */
 @media screen and (max-width: 768px) {
   .footer-container {
@@ -564,3 +887,13 @@ html
     font-size: 14px;
   }
 }
+
+
+
+
+
+
+
+
+
+

@@ -16,6 +16,8 @@ include('contactus_data.php');
 
 <body>
 
+<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
     <div class="headera">
 
 
@@ -36,10 +38,13 @@ include('contactus_data.php');
             </div>
         </div>
 
-        <!-- <div class="scrollbutton">
-            <h3>Scroll</h3>
-            <img class="scrollbuttonimg" src="/Images/Scroll button.png">
-        </div> -->
+        <script>
+    function toggleMenu() {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('show');
+    }
+</script>
+
 
     </div>
 <h1 class="Header_contact">Contact-US</h1>

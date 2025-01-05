@@ -12,7 +12,7 @@
     <!--  navigation bar and Headers-->
     <div class="headera" style=" background-image: url('Images/RoomsBackground.png'), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.718));">
 
-
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 
         <div class="mainnav">
             <div class="navbar">
@@ -31,17 +31,14 @@
 
             </div>
         </div>
+        <script>
+    function toggleMenu() {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('show');
+    }
+</script>
 
-        <div class="firstTitle">
-            <h2>Welcome to</h2>
-            <h1><b>Nova Hotel</b></h1>
-            <p>Discover luxury and comfort</p>
 
-        </div>
-        <!-- <div class="scrollbutton">
-            <h3>Scroll</h3>
-            <img class="scrollbuttonimg" src="/Images/Scroll button.png">
-        </div> -->
     </div>
 
 

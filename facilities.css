@@ -65,6 +65,28 @@
   background-blend-mode: color;
 }
 
+
+
+@media (max-width: 768px) {
+
+  .headera {
+    
+    height: 50vh;
+    background-size: cover; /* Ensures the image covers the whole area */
+    background-repeat: no-repeat;
+    background-position: center; /* Ensures the image is centered */
+    background-blend-mode: color;
+}
+}
+
+
+
+
+
+
+
+
+
 /* navigation bar and Headers*/
 
 body {
@@ -72,6 +94,10 @@ body {
   padding: 0;
   margin: 0;
 }
+.menu-toggle{
+  display: none;
+  }
+  
 
 
 
@@ -84,6 +110,105 @@ body {
     transform: translateX(0);
   }
 }
+
+
+@media (max-width: 768px) {
+  
+  .navbar {
+      position: fixed;
+      left: -50px; 
+      top: 0;
+      height: 100%;
+      width: 200px;
+      background-color: #333;
+      flex-direction: column;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+      z-index: 1000;
+  }
+
+  .menu-toggle{
+    display: block;
+    }
+    
+
+  .imgl{
+    opacity: 0;
+    pointer-events: none;
+  }
+ 
+  .navbar.show {
+      transform: translateX(0); 
+  }
+
+  .navbar ul {
+      flex-direction: column;
+      padding-left: 50px;
+  }
+
+  .navbar ul a {
+      color: white;
+      text-align: left;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-size: 16px;
+
+  }
+
+  .navbar ul a:hover {
+      background-color: #444;
+  }
+
+  .menu-toggle {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-size: 30px;
+      color: white;
+      background-color: #333;
+      border: none;
+      padding: 15px;
+      cursor: pointer;
+      z-index: 1100;
+      border-radius: 5px;
+  }
+
+ 
+  .menu-toggle:focus {
+      outline: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .Factitle{
   font-family: berlin sans FB Demi, sans-serif;
@@ -129,14 +254,7 @@ body {
 
 /*scroll button and Title*/
 
-@keyframes onsc {
-  0% {
-      transform: translatex(-100%);
-  }
-  100% {
-      transform: translatex(0);
-  }        
-}
+
 
 
 .tocen {
@@ -158,6 +276,31 @@ body {
   font-family: 'montserrat', sans-serif;
   animation: onsc 1s ease-out;
 }
+
+
+
+@media (max-width: 768px) {
+  .tocen {
+      justify-content: flex-start; /* Align text to the left */
+      text-align: left; /* Align text left for better readability on mobile */
+      font-size: 16px; /* Adjust font size for smaller screens */
+      width: 90%; /* Make the paragraph width responsive */
+      padding: 0 5%; /* Add some horizontal padding */
+      opacity: 1; /* Ensure the opacity is visible for mobile view */
+      transform: translateY(0); /* Keep the element visible without the animation on mobile */
+  }
+
+  .tocen p {
+      width: 100%; /* Ensure text takes full width on mobile */
+  }
+
+}
+
+
+
+
+
+
 
 
 .Content_image {
@@ -225,10 +368,69 @@ transition: opacity 0.3s ease-in-out;
   font-family: 'montserrat', sans-serif;
 }
 
+@media (max-width: 768px) {
+  .Content_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
 
+  .Content_image1 {
+    position: relative;
+    width: 100%;
+    max-width: 100%; /* Ensure the container uses full width */
+    margin: 0 auto;
+    overflow: hidden; /* Hide parts of the image that go beyond container */
+  }
 
+  .Content_image img {
+    width: 100%;
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Make sure the image covers the container fully without distortion */
+    display: block;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  }
 
+  .img_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
 
+  .img_overlay p {
+    font-size: 1.25em;
+    text-align: center;
+    margin: 0;
+  }
+
+  .img_overlay h1 {
+    font-size: 2em;
+  }
+
+  .img_overlay:hover {
+    opacity: 1;
+  }
+
+  .Content_image p {
+    width: 90%;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+  }
+}
 
 
 

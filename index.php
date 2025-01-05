@@ -18,8 +18,9 @@ include('subscribe.php');
 <body>
     
     <!--  navigation bar and Headers-->
-    <div class="headera">
-    
+        
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div class="headera" >
 
         <div class="mainnav">
             <div class="navbar">
@@ -36,6 +37,34 @@ include('subscribe.php');
 
             </div>
         </div>
+       
+        <script>
+    function toggleMenu() {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('show');
+    }
+</script>
+
+    <!-- <div class="headera">
+        <div class="mainnav">
+            <div class="navbar">
+                <a href="index.php" class="imgl">
+                    <img class="logoimg" src="Images/Logo.png" alt="Nova Hotel Logo">
+                </a>
+                <ul class="navonlyul">
+                    <li><a href="index.php" class="active">Home</a></li>
+                    <li><a href="facilities.php">Facilities</a></li>
+                    <li><a href="rooms.php">Rooms</a></li>
+                    <li><a href="ContactUs.php">Contact-us</a></li>
+                    <li><a href="reservation.php">Reservation</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body> -->
+
+
+
 
         <div class="firstTitle">
             <h2>Welcome to</h2>

@@ -68,6 +68,7 @@
     padding: 0;
     margin: 0;
   }
+
   
   
   
@@ -81,35 +82,77 @@
     }
   }
   
+
+  @media (max-width: 768px) {
+  
+    .navbar {
+        position: fixed;
+        left: -50px; 
+        top: 0;
+        height: 100%;
+        width: 200px;
+        background-color: #333;
+        flex-direction: column;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000;
+    }
+  
+    .menu-toggle{
+      display: block;
+      }
+      
+  
+    .imgl{
+      opacity: 0;
+      pointer-events: none;
+    }
+   
+    .navbar.show {
+        transform: translateX(0); 
+    }
+  
+    .navbar ul {
+        flex-direction: column;
+        padding-left: 50px;
+    }
+  
+    .navbar ul a {
+        color: white;
+        text-align: left;
+        padding: 15px 20px;
+        text-decoration: none;
+        font-size: 16px;
+    }
+  
+    .navbar ul a:hover {
+        background-color: #444;
+    }
+  
+    .menu-toggle {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        font-size: 30px;
+        color: white;
+        background-color: #333;
+        border: none;
+        padding: 15px;
+        cursor: pointer;
+        z-index: 1100;
+        border-radius: 5px;
+    }
+  
+   
+    .menu-toggle:focus {
+        outline: none;
+    }
+  }
+  
+  
   
   /* Scroll button and Title*/
-  .scrollbutton {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10%;
-  }
-  
-  .scrollbuttonimg {
-    background-color: #E38E49;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 20px;
-    transition: background-color 0.3s;
-    width: 45px;
-  
-  }
-  
-  .scrollbutton h3 {
-    color: white;
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-left: -5px;
-    margin-bottom: 10px;
-  }
-  
+
   .firstTitle {
     text-align: left;
     padding-top: 150px;
@@ -204,6 +247,108 @@ input[type="text"],
 
 
 
+  @media (max-width: 768px) {
+    .cont11 {
+      padding: 20px;
+    }
+  
+    .container {
+      width: 90%; /* Reduced the width to make the form a bit narrower */
+      padding: 10px;
+      text-align: center;
+      margin: 0 auto; /* Centers the form */
+    }
+  
+    .container h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+  
+    .container p {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+  
+    label {
+      font-size: 16px;
+      margin-bottom: 8px;
+      text-align: left;
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .Text_area_contact_small {
+      width: 100%;
+      max-width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+  
+    .Text_area_contact {
+      width: 100%;
+      max-width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      margin-bottom: 10px;
+      height: 120px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+  
+    .Subbutcont {
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .Subbut {
+      padding: 12px 20px;
+      background-color: #007bff;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .Subbut:hover {
+      background-color: #0056b3;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer {
     background-color: #1e73be;
     color: white;
@@ -292,6 +437,20 @@ input[type="text"],
     margin: 0;
     text-align: center;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

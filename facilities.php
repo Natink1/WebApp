@@ -10,7 +10,7 @@
 
 <body>
     <!--  navigation bar and Headers-->
-
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <div class="headera" style=" background-image: url('Images/FacilitiesBackground.png'), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.718));">
 
 
@@ -31,6 +31,12 @@
 
             </div>
         </div>
+        <script>
+            function toggleMenu() {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('show');
+    }
+    </script>
 
         <!-- <div class="firstTitle">
             <h2>Welcome to</h2>
