@@ -272,10 +272,10 @@ input[type="text"],
     }
   
     .container {
-      width: 90%; /* Reduced the width to make the form a bit narrower */
+      width: 90%; 
       padding: 10px;
       text-align: center;
-      margin: 0 auto; /* Centers the form */
+      margin: 0 auto; 
     }
   
     .container h2 {

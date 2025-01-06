@@ -144,9 +144,9 @@ body {
     
       background-image: url("Images/Fbackground.png"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.718));
       height: 100vh;
-      background-size: cover; /* Ensures the image covers the whole area */
+      background-size: cover; 
       background-repeat: no-repeat;
-      background-position: center; /* Ensures the image is centered */
+      background-position: center; 
       background-blend-mode: color;
   }
 
@@ -250,27 +250,27 @@ body {
       }
   
       .scrollbuttonimg {
-          width: 40px; /* Adjust button size */
+          width: 40px; 
       }
   
       .scrollbutton h3 {
-          font-size: 18px; /* Smaller font size */
+          font-size: 18px;
           margin-bottom: 5px;
       }
   
       .firstTitle {
-          text-align: center; /* Center the text on mobile */
-          padding-left: 5%; /* Reduce left padding */
-          padding-top: 100px; /* Reduce top padding */
-          font-size: 28px; /* Smaller font size */
+          text-align: center; 
+          padding-left: 5%; 
+          padding-top: 100px; 
+          font-size: 28px; 
       }
   
       .firstTitle h1 {
-          font-size: 40px; /* Adjust header size for mobile */
+          font-size: 40px; 
       }
   
       .firstTitle h2 {
-          font-size: 24px; /* Adjust subheader size */
+          font-size: 24px; 
       }
   }
 
@@ -323,22 +323,23 @@ body {
 /* Responsive styles for screens smaller than 768px */
 @media (max-width: 768px) {
   .Welcometxt {
-      justify-content: flex-start; /* Align text to the left */
-      text-align: left; /* Align text left for better readability on mobile */
-      font-size: 16px; /* Adjust font size for smaller screens */
-      width: 90%; /* Make the paragraph width responsive */
-      padding: 0 5%; /* Add some horizontal padding */
-      opacity: 1; /* Ensure the opacity is visible for mobile view */
-      transform: translateY(0); /* Keep the element visible without the animation on mobile */
+      justify-content: flex-start;
+      text-align: left; 
+      font-size: 16px; 
+      width: 90%; 
+      padding: 0 5%; 
+      opacity: 1;
+      transform: translateY(0); 
   }
 
   .Welcometxt p {
-      width: 100%; /* Ensure text takes full width on mobile */
+      width: 100%; 
+      text-align: justify;
   }
 
   #hiddenText {
-      display: block; /* Show the hidden text by default on mobile */
-      max-height: 1000px; /* Make sure it’s fully visible */
+      display: block;
+      max-height: 1000px;
   }
 }
 
@@ -430,43 +431,43 @@ html
 /* Responsive styles for screens smaller than 768px */
 @media (max-width: 768px) {
   .cont1 {
-      flex-direction: column; /* Stack content vertically */
+      flex-direction: column; 
       margin-top: 10px;
-      align-items: center; /* Center the content horizontally */
+      align-items: center; 
   }
 
   .cont1img img {
-      width: 90%; /* Adjust image size for smaller screens */
-      padding: 0; /* Remove excessive padding */
-      margin: 20px 20px; /* Add margin for spacing */
+      width: 90%; 
+      padding: 0; 
+      margin: 20px 20px; 
   }
 
   .cont1text {
-      padding-top: 20px; /* Reduce padding for smaller screens */
-      width: 90%; /* Adjust width for better fit on mobile */
-      padding-left: 5%; /* Center-align text content */
-      text-align: center; /* Center-align text */
+      padding-top: 20px; 
+      width: 90%; 
+      padding-left: 5%; 
+      text-align: center; 
   }
 
   .cont1text h1 {
-      font-size: 22px; /* Reduce font size for readability */
+      font-size: 22px; 
   }
 
   .cont1text p {
-      font-size: 16px; /* Adjust font size for better readability */
-      padding-right: 0; /* Remove right padding */
+      font-size: 16px; 
+      padding-right: 0; 
   }
 
   .butReadmore {
-      font-size: 12px; /* Adjust button font size */
-      width: 80px; /* Adjust button width */
-      height: 35px; /* Adjust button height */
-      margin: 10px auto; /* Center-align the button */
+      font-size: 12px; 
+      width: 80px; 
+      height: 35px; 
+      margin: 10px auto; 
   }
 
   .break {
-      width: 80%; /* Adjust break width */
-      margin-top: 20px; /* Reduce margin for mobile view */
+      width: 80%; 
+      margin-top: 20px; 
   }
 }
 
@@ -533,37 +534,37 @@ html
 /* Responsive styles for screens smaller than 768px */
 @media (max-width: 768px) {
   .cont2 {
-      flex-direction: column; /* Stack content vertically */
+      flex-direction: column; 
       margin-top: 10px;
   }
 
   .cont2img img {
-      width: 90%; /* Adjust image size for smaller screens */
-      padding: 0; /* Remove excessive padding */
-      margin: 20px 20px; /* Add margin for spacing */
+      width: 90%; 
+      padding: 0; 
+      margin: 20px 20px; 
   }
 
   .cont2text {
-      padding-top: 20px; /* Reduce padding for smaller screens */
-      width: 90%; /* Adjust width for better fit on mobile */
-      padding-left: 5%; /* Center-align content */
-      text-align: center; /* Center-align text for a cleaner look */
+      padding-top: 20px; 
+      width: 90%; 
+      padding-left: 5%; 
+      text-align: center; 
   }
 
   .cont2text h1 {
-      font-size: 22px; /* Reduce font size */
+      font-size: 22px; 
   }
 
   .cont2text p {
-      font-size: 16px; /* Adjust font size */
-      padding-right: 0; /* Remove right padding */
+      font-size: 16px; 
+      padding-right: 0; 
   }
 
   .butReadmore {
-      font-size: 12px; /* Adjust button font size */
-      width: 80px; /* Adjust button width */
-      height: 35px; /* Adjust button height */
-      margin: 10px auto; /* Center-align the button */
+      font-size: 12px; 
+      width: 80px; 
+      height: 35px; 
+      margin: 10px auto; 
   }
 }
 

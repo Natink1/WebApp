@@ -72,9 +72,9 @@
   .headera {
     
     height: 50vh;
-    background-size: cover; /* Ensures the image covers the whole area */
+    background-size: cover; 
     background-repeat: no-repeat;
-    background-position: center; /* Ensures the image is centered */
+    background-position: center; 
     background-blend-mode: color;
 }
 }
@@ -297,17 +297,17 @@ body {
 
 @media (max-width: 768px) {
   .tocen {
-      justify-content: flex-start; /* Align text to the left */
-      text-align: left; /* Align text left for better readability on mobile */
-      font-size: 16px; /* Adjust font size for smaller screens */
-      width: 90%; /* Make the paragraph width responsive */
-      padding: 0 5%; /* Add some horizontal padding */
-      opacity: 1; /* Ensure the opacity is visible for mobile view */
-      transform: translateY(0); /* Keep the element visible without the animation on mobile */
+      justify-content: flex-start; 
+      text-align: left; 
+      font-size: 16px; 
+      width: 90%; 
+      padding: 0 5%; 
+      opacity: 1; 
+      transform: translateY(0); 
   }
 
   .tocen p {
-      width: 100%; /* Ensure text takes full width on mobile */
+      width: 100%; 
   }
 
 }
@@ -396,15 +396,15 @@ transition: opacity 0.3s ease-in-out;
   .Content_image1 {
     position: relative;
     width: 100%;
-    max-width: 100%; /* Ensure the container uses full width */
+    max-width: 100%; 
     margin: 0 auto;
-    overflow: hidden; /* Hide parts of the image that go beyond container */
+    overflow: hidden; 
   }
 
   .Content_image img {
     width: 100%;
-    height: auto; /* Maintain the aspect ratio */
-    object-fit: cover; /* Make sure the image covers the container fully without distortion */
+    height: auto; 
+    object-fit: cover; 
     display: block;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   }

@@ -104,9 +104,9 @@ body {
   .headera {
     
     height: 50vh;
-    background-size: cover; /* Ensures the image covers the whole area */
+    background-size: cover; 
     background-repeat: no-repeat;
-    background-position: center; /* Ensures the image is centered */
+    background-position: center; 
     background-blend-mode: color;
 }
 }
@@ -252,17 +252,17 @@ body {
 
       @media (max-width: 768px) {
         .tocen {
-            justify-content: flex-start; /* Align text to the left */
-            text-align: left; /* Align text left for better readability on mobile */
-            font-size: 16px; /* Adjust font size for smaller screens */
-            width: 90%; /* Make the paragraph width responsive */
-            padding: 0 5%; /* Add some horizontal padding */
-            opacity: 1; /* Ensure the opacity is visible for mobile view */
-            transform: translateY(0); /* Keep the element visible without the animation on mobile */
+            justify-content: flex-start; 
+            text-align: left; 
+            font-size: 16px; 
+            width: 90%; 
+            padding: 0 5%; 
+            opacity: 1; 
+            transform: translateY(0); 
         }
       
         .tocen p {
-            width: 100%; /* Ensure text takes full width on mobile */
+            width: 100%; 
         }
       
       }
@@ -362,17 +362,17 @@ body {
     }
   
     .Content_image img {
-      width: 100%;  /* Make sure the image fills the container width */
+      width: 100%;  
       height: auto;
-      max-width: 100%;  /* Ensure the image doesn't exceed the container width */
-      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Optional: Re-enable box shadow if needed */
+      max-width: 100%;  
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); 
     }
   
     .Content_image p {
       width: 80%;
       text-align: center;
       color: #333;
-      font-size: 14px; /* Adjust font size for mobile */
+      font-size: 14px; 
       margin-top: 10px;
     }
   
