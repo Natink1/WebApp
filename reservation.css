@@ -76,10 +76,12 @@ body {
     font-family: sans-serif;
     margin: 0;
     background-color: #f0f0f0;
+    
   }
 
 
   .reservation_form {
+
     width: 1000px;
     margin: 0 auto;
     padding: 20px;
@@ -91,9 +93,15 @@ body {
      
   }
 
+.reservation_form{
+  width: 1200px;
+}
+
   .form-container {
     display: flex; 
     justify-content: space-between;
+;
+
   }
 
   .form-container > div {
@@ -119,6 +127,7 @@ body {
     margin-bottom: 15px;
     border: 1px solid #f5a623;
     border-radius: 5px;
+    height: 3vh;
 
   }
 
@@ -128,7 +137,7 @@ body {
   }
 
   select {
-    
+    height: 5vh;
     width: 95%;
     padding: 10px;
     margin-bottom: 15px;
@@ -156,6 +165,8 @@ body {
     transition: 0.5s ease-in-out;
 
   }
+
+  
 
   /*Reservation Form end*/  
 

@@ -1,3 +1,6 @@
+<?php include('reservation_data.php')?>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -31,8 +34,7 @@
 
   <h1 class="reservationtitle">Reservation</h1>
 
-
-  <form class="reservation_form" method = "form" method="post">
+  <form class="reservation_form" method="post">
     <div class="form-container">
       <div>
         <label for="name">Name:</label>
