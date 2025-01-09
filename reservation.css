@@ -1,174 +1,363 @@
 .navbar {
-  
-    display: flex;
-    width: 100%;
+
+
+  display: flex;
+  width: 100%;
+}
+
+.imgl {
+  margin-left: 200px;
+  width: 80px;
+}
+
+.imgl :hover {
+  transform: scale(1.1);
+  transition: transform 0.1s ease-in-out;
+}
+
+.logoimg {
+  width: 130px;
+}
+
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-left: 35%;
+  padding-top: 8px;
+  list-style-type: none;
+}
+
+.navbar ul a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+}
+
+.navbar ul a:hover {
+  color: #E38E49;
+  text-underline-offset: 5px;
+  text-decoration: underline;
+  transition: font-size 0.1s;
+  font-size: 19px;
+}
+
+.navbar ul a.active {
+  color: #E38E49;
+  font-weight: bold;
+  text-decoration: none
+}
+
+.headera {
+  height: 30vh;
+  background-color: #007bff;
+  background-size: cover;
+}
+
+.headera {
+  height: 30vh;
+  background-color: #007bff;
+  background-size: cover;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+
+@media (min-width: 1920px) {
+
+  .navbar{
+    padding-left: 40px;
   }
   
+  
+  .scrollbutton{
+    padding-top: 150px;
+    
+  }
+
+
+}
+  
+.reservation_login {
+  font-size: 14px;
+  width: 150px;
+  height: 40px;
+  margin-top: 14px;
+  margin-left: 150px;
+  color: white;
+  background-color: #E38E49;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  position: relative;
+  
+}
+
+.reservation_login:hover {
+  background-color: transparent;
+  color: #111111;
+  border: #E38E49 solid 1px;
+}
+
+
+@media (max-width: 768px) {
+
+
+  .reservation_login{
+    display: none;
+  }
+  
+  .navbar {
+    position: fixed;
+    left: -50px;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #333;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+
   .imgl {
-    margin-left: 200px;
-    width: 80px;
+    opacity: 0;
+    pointer-events: none;
   }
-  
-  .imgl :hover {
-    transform: scale(1.1);
-    transition: transform 0.1s ease-in-out;
+
+  .navbar.show {
+    transform: translateX(0);
   }
-  
-  .logoimg {
-    width: 130px;
-  }
-  
+
   .navbar ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding-left: 35%;
-    padding-top: 8px;
-    list-style-type: none;
+    flex-direction: column;
+    padding-left: 50px;
   }
-  
+
   .navbar ul a {
     color: white;
-    text-align: center;
-    padding: 14px 16px;
+    text-align: left;
+    padding: 15px 20px;
     text-decoration: none;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 18px;
+    font-size: 16px;
   }
-  
+
   .navbar ul a:hover {
-    color: #E38E49;
-    text-underline-offset: 5px;
-    text-decoration: underline;
-    transition: font-size 0.1s;
-    font-size: 19px;
-  }
-  
-  .navbar ul a.active {
-    color: #E38E49;
-    font-weight: bold;
-    text-decoration: none
+    background-color: #444;
   }
 
- 
-
-  .headera {
-    height: 30vh;
-    background-color: #007bff;
-    background-size: cover;
-  }
-  
-  /* navigation bar and Headers*/
-  
-
-  .reservationtitle{
-    text-align: center;
+  .menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
     color: white;
-    font-family: berlin sans FB Demi, sans-serif;
-    font-size: 40px;
+    background-color: #333;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 1100;
+    border-radius: 5px;
   }
+
+
+  .menu-toggle:focus {
+    outline: none;
+  }
+}
+
+body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+  }
+
+body {
+  background-image: url('Images/formback.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+
+}
+
+/* navigation bar and Headers*/
+
+
+
+.reservationtitle {
+  text-align: center;
+  color: white;
+  font-family: berlin sans FB Demi, sans-serif;
+  font-size: 40px;
+}
 
 
 
 /*Reservation Form*/
 
-body {
-    font-family: sans-serif;
-    margin: 0;
-    background-color: #f0f0f0;
-    
-  }
 
+.reservation_form {
 
-  .reservation_form {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5941f;
 
-    width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    
-    border: 1px solid #e5941f;
-     
-  }
-
-.reservation_form{
-  width: 1200px;
 }
 
-  .form-container {
-    display: flex; 
-    justify-content: space-between;
-;
+.form-container {
+  display: flex;
+  
 
+}
+
+.form-container>div {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.form-container>div:last-child {
+  margin-right: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #f5a623;
+  border-radius: 5px;
+  height: 3vh;
+
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+select {
+  height: 5vh;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #f5a623;
+  border-radius: 3px;
+}
+
+.booknow {
+  background-color: #f5a623;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  margin: 20px auto 0;
+}
+
+.booknow:hover {
+  background-color: white;
+  border-color: #f5a623;
+  color: black;
+  border: solid .5px #f5a623;
+  transition: 0.5s ease-in-out;
+
+}
+
+/*Reservation Form end*/
+@media screen and (max-width: 768px) {
+
+  body {
+    background-image: none; 
+  }
+
+  .reservationtitle{
+    color: #333;
+  }
+  .reservation_form {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .form-container {
+    flex-direction: column; 
   }
 
   .form-container > div {
-    flex: 1; 
-    margin-right: 20px;
-  }
-
-  .form-container > div:last-child {
     margin-right: 0;
-  }
-
-  label {
-    display: block;
-    margin-bottom: 5px;
+    margin-bottom: 20px; 
   }
 
   input[type="text"],
   input[type="date"],
   input[type="email"],
-  textarea {
-    width: 90%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #f5a623;
-    border-radius: 5px;
-    height: 3vh;
-
-  }
-
-  textarea {
-    resize: vertical;
-    height: 100px;
-  }
-
   select {
-    height: 5vh;
-    width: 95%;
+    width: 90%; 
     padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #f5a623;
-    border-radius: 3px;
+    font-size: 14px;
+
+  }
+
+  select{
+    width: 96%;
+    height: 6vh;
+  }
+
+  textarea {
+    height: 80px;
+    width: 90%;
   }
 
   .booknow {
-    background-color: #f5a623;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    text-align: center;
-    display: block;
-    margin: 20px auto 0;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+    margin-top: 20px;
   }
 
-  .booknow:hover {
-    background-color: white;
-    border-color: #f5a623;
-    color: black;
-    border: solid .5px #f5a623;
-    transition: 0.5s ease-in-out;
-
+  label {
+    font-size: 14px;
+    margin-bottom: 5px;
   }
+}
 
-  
 
-  /*Reservation Form end*/  
+/*footer elemets*/
 
 .footer {
   background-color: #1e73be;
@@ -182,6 +371,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 25px 50px;
+
 }
 
 .footer-section {
@@ -201,7 +391,7 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.footer-section a{
+.footer-section a {
   color: white;
   text-decoration: none;
   font-size: 14px;
@@ -235,18 +425,16 @@ body {
   font-size: 14px;
 }
 
-.Footer_button {
+.footer-section.newsletter button {
   padding: 8px 12px;
   border: none;
   background-color: #f5a623;
   color: white;
   border-radius: 0 3px 3px 0;
   cursor: pointer;
-  margin-bottom: 15px;
-  
 }
 
-.Footer_button:hover {
+.footer-section.newsletter button:hover {
   background-color: #e5941f;
 
 }
@@ -261,93 +449,86 @@ body {
   text-align: center;
 }
 
-body{
-  background-image: url('Images/formback.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  backdrop-filter: blur(10px);
- 
+/*footer elemets*/
+
+
+
+/* Footer - Responsive for Mobile */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .footer-section {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .footer-section h2 {
+    font-size: 16px;
+  }
+
+  .footer-section p,
+  .footer-section a {
+    font-size: 14px;
+  }
+
+  .links-social {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .social-media p {
+    padding: 5px 0;
+  }
+
+  .footer-section.newsletter form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section.newsletter input {
+    width: 80%;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .footer-section.newsletter button {
+    width: 50%;
+    font-size: 14px;
+  }
+
+  .footer-section-company-info {
+    padding-left: 0;
+  }
+
+  .copy {
+    font-size: 12px;
+    margin-top: 10px;
+  }
 }
 
+/* Additional for small*/
+@media screen and (max-width: 480px) {
 
+  .footer-section p,
+  .footer-section a {
+    font-size: 12px;
+  }
 
-  /* Footer - Responsive for Mobile */
-  @media screen and (max-width: 768px) {
-    .footer-container {
-      flex-direction: column;
-      align-items: center;
-      margin-left: 0;
-      padding: 20px;
-    }
-  
-    .footer-section {
-      margin: 10px 0;
-      text-align: center;
-    }
-  
-    .footer-section h2 {
-      font-size: 16px;
-    }
-  
-    .footer-section p, 
-    .footer-section a {
-      font-size: 14px;
-    }
-  
-    .links-social {
-      flex-direction: column;
-      align-items: center;
-      padding-left: 0;
-    }
-  
-    .social-media p {
-      padding: 5px 0;
-    }
-  
-    .footer-section.newsletter form {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .footer-section.newsletter input {
-      width: 80%;
-      margin-bottom: 10px;
-      font-size: 14px;
-    }
-  
-    .footer-section.newsletter button {
-      width: 50%;
-      font-size: 14px;
-    }
-  
-    .footer-section-company-info {
-      padding-left: 0;
-    }
-  
-    .copy {
-      font-size: 12px;
-      margin-top: 10px;
-    }
+  .footer-section.newsletter input {
+    font-size: 12px;
   }
-  
-  /* Additional for small*/
-  @media screen and (max-width: 480px) {
-    .footer-section p, 
-    .footer-section a {
-      font-size: 12px;
-    }
-  
-    .footer-section.newsletter input {
-      font-size: 12px;
-    }
-  
-    .footer-section.newsletter button {
-      font-size: 12px;
-    }
-  
-    .footer-section h2 {
-      font-size: 14px;
-    }
+
+  .footer-section.newsletter button {
+    font-size: 12px;
   }
-  
+
+  .footer-section h2 {
+    font-size: 14px;
+  }
+}

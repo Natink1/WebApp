@@ -4,6 +4,38 @@ include('contactus_data.php');
 
 ?>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,7 +66,7 @@ include('contactus_data.php');
                     <li><a href="reservation.php">Reservation</a></li>
                 </ul>
 
-
+              
             </div>
         </div>
 

@@ -1,17 +1,26 @@
-<?php include('reservation_data.php')?>
-
+<?php
+include('reservation_data.php')
+  ?>
 
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>Booking Form</title>
-  <link rel="stylesheet" href="reservation.css">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA HOTEL</title>
+    <link rel="stylesheet" href="reservation.css">
+    
 </head>
 
 <body>
+
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
   <div class="headera">
 
+    </script>
 
     <div class="mainnav">
       <div class="navbar">
@@ -26,9 +35,18 @@
           <li><a href="reservation.php" class="active">Reservation</a></li>
         </ul>
 
+        <button onclick="handleSignIn()" class="reservation_login">View Reservations</button>
 
       </div>
     </div>
+    <script>
+
+      function toggleMenu() {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('show');
+      }
+    </script>
+
   </div>
 
 
@@ -69,41 +87,43 @@
   </form>
 
   <footer class="footer">
-        <div class="footer-container">
+    <div class="footer-container">
 
 
-            <div class="footer-section-company-info">
-                <h2>NOVA Hotel</h2>
-                <p>4 Kilo Street</p>
-                <p>+1 234 567 890</p>
-                <p>4kilo@aau.edu.et</p>
-            </div>
+      <div class="footer-section-company-info">
+        <h2>NOVA Hotel</h2>
+        <p>4 Kilo Street</p>
+        <p>+1 234 567 890</p>
+        <p>4kilo@aau.edu.et</p>
+      </div>
 
 
-            <div class="footer-section links-social">
-                <div class="links">
-                    <p><a href="#">About Us</a></p>
-                    <p><a href="#">Contact</a></p>
-                    <p><a href="#">Terms & Conditions</a></p>
-                </div>
-                <div class="social-media">
-                    <p><a href="#">Facebook</a></p>
-                    <p><a href="#">Twitter</a></p>
-                    <p><a href="#">Instagram</a></p>
-                </div>
-            </div>
-
-            <div class="footer-section newsletter">
-                <p>Subscribe to our newsletter</p>
-                <form method="post" >
-                    <input type="email" placeholder="Email Address" name="email1" class="input_footer"required>
-                    <button class="Footer_button" type="submit">OK</button>
-                </form>
-            </div>
+      <div class="footer-section links-social">
+        <div class="links">
+          <p><a href="#">About Us</a></p>
+          <p><a href="#">Contact</a></p>
+          <p><a href="#">Terms & Conditions</a></p>
         </div>
-        <h4 class="copy">&copy;2022 Nova Hotel. All Rights Reserved. Powerd By Nati</h3>
-    </footer>
+        <div class="social-media">
+          <p><a href="#">Facebook</a></p>
+          <p><a href="#">Twitter</a></p>
+          <p><a href="#">Instagram</a></p>
+        </div>
+      </div>
+
+      <div class="footer-section newsletter">
+        <p>Subscribe to our newsletter</p>
+        <form method="post">
+          <input type="email" placeholder="Email Address" name="email1" required>
+          <button class="Footer_button" type="submit">OK</button>
+        </form>
+      </div>
+    </div>
+    <h4 class="copy">&copy;2022 Nova Hotel. All Rights Reserved. Powerd By Nati</h3>
+  </footer>
 
 </body>
+
+<script src="reservation.js"></script>
 
 </html>

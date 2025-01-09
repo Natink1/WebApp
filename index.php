@@ -32,8 +32,10 @@ include('subscribe.php');
                     <li><a href="rooms.php">Rooms</a></li>
                     <li><a href="ContactUs.php">Contact-us</a></li>
                     <li><a href="reservation.php">Reservation</a></li>
+                   
                 </ul>
-
+                
+           
 
             </div>
         </div>
