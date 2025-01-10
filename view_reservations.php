@@ -1,9 +1,28 @@
 
 <?php
     include('database.php');
+
+    if(isset($_GET['delete_id']))
+    {
+      
+      $stmt_select = $DB_con->prepare('SELECT name FROM Reservation WHERE id =:id');
+      $stmt_select->execute(array(':id'=>$_GET['delete_id']));
+    
+      $stmt_delete = $DB_con->prepare('DELETE FROM Reservation WHERE id =:id');
+      $stmt_delete->bindParam(':id',$_GET['delete_id']);
+      $stmt_delete->execute();
+  
+       
+      echo "<script>
+      alert('Message sent successfully');
+      window.location = '" . $_SERVER['PHP_SELF'] . "';
+      </script>";
+}
+    
     $query = "SELECT * FROM Reservation";
     $result = mysqli_query(mysql: $db_con, query: $query);
     $counter = 1;
+
     echo"
     <div class='cont'>
     <div class='txt'><h1 class='retitle'>Reservations</h1></div>
@@ -21,6 +40,7 @@
                 <th>Check-in</th>
                 <th>Check-out</th>
                 <th>Special Request</th>
+                <th>Action</th>
             </tr>
        <thead>
        <tbody>
@@ -38,6 +58,11 @@
                 <td>{$row['checkIn']}</td>
                 <td>{$row['CheckOut']}</td>
                 <td>{$row['message']}</td>
+                <td> <a class='iq-bg-warning' href='?delete_id=" . $row['id'] . "' data-toggle='tooltip' data-placement='top' title='' data-original-title='Delete' onclick='return confirm(\"Are you sure to remove this Reservation?\")'>
+                    <i class='ri-delete-bin-line'>Delete</i>
+                    
+                </a></td>
+
               </tr>";
 
         $counter++;

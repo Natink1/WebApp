@@ -13,4 +13,13 @@
     if(!$db_con){
         die("Connection failed: " . mysqli_connect_error());
     }
+
+
+    try{
+        $DB_con = new PDO("mysql:host={$db_server};dbname={$db_table}",$db_user,$DB_PASS);
+        $DB_con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+      }
+      catch(PDOException $e){
+        echo $e->getMessage();
+      }
 ?>
