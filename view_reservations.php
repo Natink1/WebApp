@@ -14,7 +14,7 @@
   
        
       echo "<script>
-      alert('Message sent successfully');
+      alert('Reservation Successfully Deleted');
       window.location = '" . $_SERVER['PHP_SELF'] . "';
       </script>";
 }
@@ -59,7 +59,7 @@
                 <td>{$row['CheckOut']}</td>
                 <td>{$row['message']}</td>
                 <td> <a class='iq-bg-warning' href='?delete_id=" . $row['id'] . "' data-toggle='tooltip' data-placement='top' title='' data-original-title='Delete' onclick='return confirm(\"Are you sure to remove this Reservation?\")'>
-                    <i class='ri-delete-bin-line'>Delete</i>
+                    <i>Delete </i>
                     
                 </a></td>
 

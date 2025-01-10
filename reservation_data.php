@@ -10,6 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     foreach ($fields as $field) {
         if (isset($_POST[$field])) {
             $formData[$field] = $_POST[$field];
+            
         } else {
             
             echo "Please fill in all fields!";
