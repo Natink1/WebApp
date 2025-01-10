@@ -23,8 +23,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     
     if ($stmt->execute()) {
-        
-        header("Location: " . $_SERVER['PHP_SELF']);
+        echo "<script>
+        alert('Reservation successful');
+        window.location = '" . $_SERVER['PHP_SELF'] . "';
+        </script>";
         
         exit;
     } else {
