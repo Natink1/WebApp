@@ -7,17 +7,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     $formData = [];
 
-    foreach ($fields as $field) {
-        if (isset($_POST[$field])) {
-            $formData[$field] = $_POST[$field];
+    // foreach ($fields as $field) {
+    //     if (isset($_POST[$field])) {
+    //         $formData[$field] = $_POST[$field];
+
+    //     } else {
             
+    //         echo "Please fill in all fields!";
+    //         exit;
+    //     }
+
+    // }
+
+    foreach ($fields as $field) {
+        if (isset($_POST[$field]) && !empty(trim($_POST[$field]))) {
+            
+            $formData[$field] = htmlspecialchars(trim($_POST[$field]), ENT_QUOTES, 'UTF-8');
         } else {
             
-            echo "Please fill in all fields!";
-            exit;
         }
     }
 
+
+    echo "<script>alert('Please fill in all fields!');
+    window.location = '" . $_SERVER['PHP_SELF'] . "';
+        </script>";
+    
   
     $stmt = $db_con->prepare("INSERT INTO Reservation (name, email, roomType, phone, checkIn, checkOut, message) VALUES (?, ?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("sssssss", $formData['name'], $formData['email'], $formData['roomType'], $formData['phone'], $formData['checkIn'], $formData['checkOut'], $formData["message"]);
