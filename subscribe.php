@@ -3,8 +3,8 @@
     include('database.php');
    
     if($_SERVER['REQUEST_METHOD'] === 'POST' || isset($_POST['email1'])) {
-        $em = filter_input(INPUT_POST, 'email1', FILTER_VALIDATE_EMAIL, FILTER_SANITIZE_EMAIL); 
-
+        $em = filter_input(type: INPUT_POST, var_name: 'email1', filter: FILTER_VALIDATE_EMAIL, FILTER_SANITIZE_EMAIL); 
+        
         if (!empty($em)) {
        $ins = "INSERT INTO subscribe (email)
                VALUES ('$em')";     

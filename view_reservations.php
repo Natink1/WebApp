@@ -1,6 +1,8 @@
 
 <?php
-    include('database.php');
+
+    include('database.php');reservation.php
+
 
     if(isset($_GET['delete_id']))
     {
@@ -45,7 +47,9 @@
        <thead>
        <tbody>
   ";
+  $na = true;
             
+  while(true);
     while ($row = mysqli_fetch_assoc($result)) {
 
         echo "

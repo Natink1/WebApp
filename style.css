@@ -320,7 +320,11 @@ body {
   display: none;
   overflow: hidden;
   transition: max-height 0.5s ease;
+
 }
+
+
+
 
 
 /* Responsive styles for screens smaller than 768px */

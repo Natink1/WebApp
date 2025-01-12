@@ -7,7 +7,7 @@
 
     $db_con = "";
 
-    $db_con = mysqli_connect($db_server, $db_user, $db_pass, $db_table );
+    $db_con = mysqli_connect($db_server, $db_user, $db_pass, database: $db_table );
  
     
     if(!$db_con){

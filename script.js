@@ -75,15 +75,18 @@ const toggleButton = document.getElementById('toggle-Button');
 toggleButton.textContent = 'Show More';
 
 toggleButton.addEventListener('click', () => {
+    console.log("Called");
   if (hiddenText.style.display === 'none' || hiddenText.style.display === '') {
     hiddenText.style.display = 'block';
     toggleButton.textContent = 'Show Less';
+
   } else {
     hiddenText.style.display = 'none';
     toggleButton.textContent = 'Show More';
   }
 
 });
+
 // text toggle //
 
 const observer = new IntersectionObserver(entries => {
