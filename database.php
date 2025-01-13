@@ -1,9 +1,9 @@
 <?php
 
-    $db_server = "fdb1029.awardspace.net";
-    $db_user = "4573616_subscribe";
-    $db_pass = "Na591,.//.,";
-    $db_table = "4573616_subscribe";
+    $db_server = "localhost";
+    $db_user = "root";
+    $db_pass = "";
+    $db_table = "subscribe_email";
 
     $db_con = "";
 
