@@ -19,16 +19,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // }
 
-
-    //Validating user input
     foreach ($fields as $field) {
         if (isset($_POST[$field]) && !empty(trim($_POST[$field]))) {
             
-            $user_input = $_POST[$field];
-            $entry = trim(string: $user_input);
-            $formData[$field] = htmlspecialchars($entry, ENT_QUOTES, 'UTF-8');
+            $formData[$field] = htmlspecialchars(trim($_POST[$field]), ENT_QUOTES, 'UTF-8');
         } else {
-            
             
         }
     }
@@ -39,8 +34,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </script>";
     
   
-    $stmt = $db_con->prepare(query: "INSERT INTO Reservation (name, email, roomType, phone, checkIn, checkOut, message) VALUES (?, ?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("sssssss", var: $formData['name'], $formData['email'], $formData['roomType'], $formData['phone'], $formData['checkIn'], $formData['checkOut'], $formData["message"]);
+    $stmt = $db_con->prepare("INSERT INTO Reservation (name, email, roomType, phone, checkIn, checkOut, message) VALUES (?, ?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssssss", $formData['name'], $formData['email'], $formData['roomType'], $formData['phone'], $formData['checkIn'], $formData['checkOut'], $formData["message"]);
 
     
     if ($stmt->execute()) {

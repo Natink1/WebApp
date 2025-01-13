@@ -1,10 +1,8 @@
 
 <?php
+    include('database.php');
 
-    include('database.php');reservation.php
-
-
-    if(isset($_GET['delete_id']))
+  if(isset($_GET['delete_id']))
     {
       
       $stmt_select = $DB_con->prepare('SELECT name FROM Reservation WHERE id =:id');
@@ -16,15 +14,15 @@
   
        
       echo "<script>
-      alert('Reservation Successfully Deleted');
+      alert('Reservation Deleted');
       window.location = '" . $_SERVER['PHP_SELF'] . "';
       </script>";
 }
-    
+
+
     $query = "SELECT * FROM Reservation";
     $result = mysqli_query(mysql: $db_con, query: $query);
     $counter = 1;
-
     echo"
     <div class='cont'>
     <div class='txt'><h1 class='retitle'>Reservations</h1></div>
@@ -47,9 +45,7 @@
        <thead>
        <tbody>
   ";
-  $na = true;
             
-  while(true);
     while ($row = mysqli_fetch_assoc($result)) {
 
         echo "
@@ -62,11 +58,10 @@
                 <td>{$row['checkIn']}</td>
                 <td>{$row['CheckOut']}</td>
                 <td>{$row['message']}</td>
-                <td> <a class='iq-bg-warning' href='?delete_id=" . $row['id'] . "' data-toggle='tooltip' data-placement='top' title='' data-original-title='Delete' onclick='return confirm(\"Are you sure to remove this Reservation?\")'>
-                    <i>Delete </i>
+                   <td> <a class='iq-bg-warning' href='?delete_id=" . $row['id'] . "' data-toggle='tooltip' data-placement='top' title='' data-original-title='Delete' onclick='return confirm(\"Are you sure to remove this Reservation?\")'>
+                    <i class='ri-delete-bin-line'>Delete</i>
                     
                 </a></td>
-
               </tr>";
 
         $counter++;

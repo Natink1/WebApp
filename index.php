@@ -129,10 +129,8 @@ include('subscribe.php');
                 beach ensures a relaxed state of mind.</p>
             <p id="hiddenText">It seems like time stands still watching the 
                 ocean. .</p>
-                <button id="toggle-Button" class= "butReadmore" on></button>
+                <button id="toggle-Button" class= "butReadmore"></button>
         </div>
-
-
 
         <div class="cont2img">
             <img class="bed2img" src="Images/Vac.png">

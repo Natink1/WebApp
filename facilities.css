@@ -335,6 +335,7 @@ body {
   position: relative;
   max-width: 900px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  
 }
 
 .Content_image p{
@@ -344,7 +345,6 @@ body {
 
 .img_overlay
 {
-
 position: absolute;
 top: 0;
 left: 0;
