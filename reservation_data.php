@@ -25,13 +25,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $formData[$field] = htmlspecialchars(trim($_POST[$field]), ENT_QUOTES, 'UTF-8');
         } else {
             
+    echo "<script>alert('Please fill in all fields!');
+    window.location = '" . $_SERVER['PHP_SELF'] . "';
+        </script>";
         }
     }
 
 
-    echo "<script>alert('Please fill in all fields!');
-    window.location = '" . $_SERVER['PHP_SELF'] . "';
-        </script>";
     
   
     $stmt = $db_con->prepare("INSERT INTO Reservation (name, email, roomType, phone, checkIn, checkOut, message) VALUES (?, ?, ?, ?, ?, ?, ?)");

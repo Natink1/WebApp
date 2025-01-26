@@ -35,7 +35,7 @@ include('reservation_data.php')
           <li><a href="reservation.php" class="active">Reservation</a></li>
         </ul>
 
-        <button onclick="handleSignIn()" class="reservation_login">View Reservations</button>
+        <a href="login.php"><button class="reservation_login">View Reservations</button></a>
 
       </div>
     </div>
@@ -112,11 +112,11 @@ include('reservation_data.php')
       </div>
 
       <div class="footer-section newsletter">
-        <p>Subscribe to our newsletter</p>
+        <!-- <p>Subscribe to our newsletter</p>
         <form method="post">
           <input type="email" placeholder="Email Address" name="email1" required>
           <button class="Footer_button" type="submit">OK</button>
-        </form>
+        </form> -->
       </div>
     </div>
     <h4 class="copy">&copy;2022 Nova Hotel. All Rights Reserved. Powerd By Nati</h3>
