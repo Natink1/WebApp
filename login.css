@@ -18,11 +18,12 @@ body{
 
 
 .lil{
-    background-color: aqua;
+    background-color: white;
     width: 500px;
     margin: 0;
     padding: 50px;
     border-radius: 25px;    
+    border: solid #007bff 3px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,7 +56,7 @@ p{
 input[type="text"],input[type="password"]
 
 {   
-    width: 80%;
+    width: 70%;
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 18px;
