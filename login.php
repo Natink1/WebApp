@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,19 +7,29 @@
     <title>Login</title>
     <link rel="stylesheet" href="login.css">
 </head>
+
 <body>
 
     <div class="logincontainer">
         <div class="lil">
-    <h1>Login</h1>
-      <form action="get" class="logina">
+  
+      <form action="logging.php" class="logina" method="post">
+      <h1>Login</h1>
+
+<?php if(isset($_GET['error'])){
+  ?>
+  <p>  <?php echo $_GET['error']; ?> </p>
+<?php
+}
+?>
         <label>Username</label><br>
-        <input type="text"><br>
+        <input name="user" type="text"><br>
         <label>Password</label><br>
-        <input type="password"><br>
+        <input name="pass" type="password"><br>
         <button type="submit">Login</button>
         </form>
       </div>
       </div>
 </body>
 </html>
+

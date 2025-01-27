@@ -1,5 +1,13 @@
-
 <?php
+
+session_start();
+
+if(isset($_SESSION['uname']) && isset($_SESSION['pass'])) 
+
+{ 
+    ?>
+<?php
+
     include('database.php');
 
   if(isset($_GET['delete_id']))
@@ -26,7 +34,7 @@
     echo"
     <div class='cont'>
     <div class='txt'><h1 class='retitle'>Reservations</h1></div>
-    <div class='btn'><a href='reservation.php'><button class='logoutbut'> signout<signout></button></a></div>
+    <div class='btn'><a href='logout.php'><button class='logoutbut'> signout<signout></button></a></div>
     </div>    
     <table>
         <thead>
@@ -192,3 +200,14 @@ table{
 
 </body>
 </html>
+
+<?php
+}
+else
+
+{
+    session_unset();
+    header("location: login.php");
+    exit();
+}
+?>

@@ -45,6 +45,12 @@ h1{
 
 }
 
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: red;
+    text-transform: capitalize;
+}
+
 
 input[type="text"],input[type="password"]
 
