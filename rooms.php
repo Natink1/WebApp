@@ -60,8 +60,10 @@
             <ul>
                 <li>Ideal for solo travelers seeking comfort and convenience.</li>
                 <li>Features a cozy queen or full-size bed.</li>                   
-                <li class="hidet" id="hidden">Equipped with a private bathroom and essential amenities.<br>
-                Perfect for business trips or leisure escapes.</li>
+                <span class="hidet" id="hidden"><li>Equipped with a private bathroom and essential amenities.</li>
+                
+                <li>Perfect for business trips or leisure escapes.</li>
+</span>
             </ul>
             <button class="downbut" id="morebut">&#9660</button>
         </div>
@@ -75,8 +77,9 @@
         <ul>
                 <li>Ideal for solo travelers seeking comfort and convenience.</li>
                 <li>Features a cozy queen or full-size bed.</li>                   
-                <li class="hidet" id="hidden2">Equipped with a private bathroom and essential amenities.<br>
-                Perfect for business trips or leisure escapes.</li>
+                <span class="hidet" id="hidden2"><li>Equipped with a private bathroom and essential amenities.</li>
+                <li>Perfect for business trips or leisure escapes.</li>
+</span>
             </ul>
             <button class="downbut" id="morebut2">&#9660</button>
         </div>
@@ -89,8 +92,8 @@
         <ul>
                 <li>Ideal for friends or colleagues traveling together.</li>
                 <li>Ideal for friends or colleagues traveling together.</li>                   
-                <li class="hidet" id="hidden3">Provides comfort and privacy for each guest.<br>
-                Perfect for groups or those who prefer their own space.</li>
+                <span class="hidet" id="hidden3"><li>Provides comfort and privacy for each guest.</li>
+                <li>Perfect for groups or those who prefer their own space.</li>
             </ul>
             <button class="downbut" id="morebut3">&#9660</button>
         </div>

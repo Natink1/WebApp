@@ -34,7 +34,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt = $db_con->prepare("INSERT INTO Reservation (name, email, roomType, phone, checkIn, checkOut, message) VALUES (?, ?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("sssssss", $formData['name'], $formData['email'], $formData['roomType'], $formData['phone'], $formData['checkIn'], $formData['checkOut'], $formData["message"]);
 
-    
     if ($stmt->execute()) {
         echo "<script>
         alert('Reservation successful');
