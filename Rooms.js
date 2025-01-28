@@ -5,7 +5,8 @@ const Button = document.querySelectorAll('.downbut');
 Button.forEach((Button, index) =>{
 Button.addEventListener('click', () => {
     const hiddent = hiddents[index];
-    if (hiddent.style.display === "none" || hiddent.style.display === ""){
+    if (hiddent.style.display === "none" || hiddent.style.display === "")
+        {
         hiddent.style.display = "block";
         Button.innerHTML = '&#9650';
     }
