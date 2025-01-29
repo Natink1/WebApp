@@ -29,7 +29,7 @@ if(isset($_SESSION['uname']) && isset($_SESSION['pass']))
 
 
     $query = "SELECT * FROM Reservation";
-    $result = mysqli_query(mysql: $db_con, query: $query);
+    $result = mysqli_query($db_con, $query);
     $counter = 1;
     echo"
     <div class='cont'>
