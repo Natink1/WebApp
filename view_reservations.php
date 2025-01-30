@@ -200,14 +200,8 @@ table{
     border:hsl(211, 100.00%, 50.00%) solid 1px;
 }
 
-
-
 </style>
 <body>
-
-
-
-
 
 </body>
 </html>

@@ -65,16 +65,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 .headera {
-  height: 30vh;
-  background-color: #007bff;
+  height: 40vh;
+  background-image: url('Images/Reservation_image.png');
+  background-color: rgba(0, 0, 0, 0.5);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  
 }
 
-.headera {
-  height: 30vh;
-  background-color: #007bff;
-  background-size: cover;
-}
 
 .menu-toggle {
   display: none;
@@ -128,6 +127,9 @@ body::-webkit-scrollbar-thumb {
     display: none;
   }
   
+  .headera{
+    background-position: center;
+  }
   
   .navbar {
     position: fixed;
@@ -204,7 +206,7 @@ body {
   }
 
 body {
-  background-image: url('Images/formback.jpg');
+  background-color: white;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -224,7 +226,7 @@ body {
 
 .reservationtitle {
   text-align: center;
-  color: white;
+  color: black;
   font-family: berlin sans FB Demi, sans-serif;
   font-size: 40px;
 }

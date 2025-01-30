@@ -25,9 +25,6 @@ if(empty($pass)){
 
     $result = mysqli_query($db_con, $query);
 
-
-
-
     if(mysqli_num_rows($result)) {
         $row = mysqli_fetch_assoc($result);
         if($row['uname'] === $name && $row['pass'] === $pass) {
