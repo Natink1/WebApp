@@ -29,7 +29,7 @@ if(isset($_SESSION['uname']) && isset($_SESSION['pass']))
 
 
     $query = "SELECT * FROM Reservation";
-    $result = mysqli_query(mysql: $db_con, query: $query);
+    $result = mysqli_query($db_con, $query);
     $counter = 1;
     echo"
     <div class='cont'>
@@ -89,7 +89,18 @@ echo"
     <title>View Reservation</title>
 </head>
 <style> 
-
+body::-webkit-scrollbar {
+  width: 10px;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #E38E49;
+  outline: 1px solid slategrey;
+}
 .cont {
     display: flex; 
     align-items: center;
@@ -189,14 +200,8 @@ table{
     border:hsl(211, 100.00%, 50.00%) solid 1px;
 }
 
-
-
 </style>
 <body>
-
-
-
-
 
 </body>
 </html>
