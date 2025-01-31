@@ -51,18 +51,15 @@
   text-decoration: none
 }
 
-.headera {
-  height: 30vh;
-  background-color: #007bff;
+/* .headera {
+  height: 40vh;
+  background-image: url('Images/Reservation.png');
+  background-color: rgba(0, 0, 0, 0.5);
   background-size: cover;
-}
-
-.headera {
-  height: 30vh;
-  background-color: #007bff;
-  background-size: cover;
-}
-
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  
+} */
 .menu-toggle {
   display: none;
 }

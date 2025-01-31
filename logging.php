@@ -1,7 +1,6 @@
 <?php
 
 
-
   include("database.php");
 
     session_start();
@@ -19,16 +18,13 @@ if(empty($name)){
 }
 
 if(empty($pass)){
+    
     header("location: login.php?error= password is required");
     exit();
 }
-
     $query = "SELECT * from users WHERE uname='$name' AND pass='$pass'";
 
     $result = mysqli_query($db_con, $query);
-
-
-
 
     if(mysqli_num_rows($result)) {
         $row = mysqli_fetch_assoc($result);
@@ -38,12 +34,10 @@ if(empty($pass)){
         $_SESSION['pass'] = $row['pass'];
         header("Location: view_reservations.php");
         exit();
-        }
-
-        }
+        }     }
         
         else {
-            header("Location: login.php?error= Username and Password is Incorrect");
+            header("Location: login.php?error= Username or Password is Incorrect");
         exit();
     }
 
@@ -57,10 +51,9 @@ if(empty($pass)){
 //     echo "<script>alert("incorrect password");</script>";header
 // }
 
-
-    // echo "<script>
-    // window.location = '" . $_SERVER['view_reservations.php'] . "';
-    // </script>";
+// echo "<script>
+// window.location = '" . $_SERVER['view_reservations.php'] . "';
+// </script>";
 
 
 

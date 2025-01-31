@@ -16,6 +16,7 @@
       <form action="logging.php" class="logina" method="post">
       <h1>Login</h1>
 
+  <!-- Error Handle-->
 <?php if(isset($_GET['error'])){
   ?>
   <p>  <?php echo $_GET['error']; ?> </p>
