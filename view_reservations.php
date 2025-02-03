@@ -66,7 +66,8 @@ if(isset($_SESSION['uname']) && isset($_SESSION['pass']))
                 <td>{$row['checkIn']}</td>
                 <td>{$row['CheckOut']}</td>
                 <td>{$row['message']}</td>
-                   <td> <a class='iq-bg-warning' href='?delete_id=" . $row['id'] . "' data-toggle='tooltip' data-placement='top' title='' data-original-title='Delete' onclick='return confirm(\"Are you sure to remove this Reservation?\")'>
+                   <td> <a class='iq-bg-warning' href='?delete_id=" . $row['id'] . "' data-toggle='tooltip' data-placement='top' title='' 
+                   data-original-title='Delete' onclick='return confirm(\"Are you sure to remove this Reservation?\")'>
                     <i class='ri-delete-bin-line'>Delete</i>
                     
                 </a></td>
@@ -215,4 +216,6 @@ else
     header("location: login.php");
     exit();
 }
+
+
 ?>
